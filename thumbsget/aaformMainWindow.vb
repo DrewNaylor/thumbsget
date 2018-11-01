@@ -36,17 +36,22 @@ Public Class aaformMainWindow
             Debug.WriteLine("Start:")
             Debug.WriteLine("Current URL: " & thumbnailUrl)
             thumbnailUrl = thumbnailUrl.Replace("www.", "")
-            Debug.WriteLine("Current URL: " & thumbnailUrl)
+            Debug.WriteLine("Replace www. Current URL: " & thumbnailUrl)
             ' Replace "?feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
-            Debug.WriteLine("Current URL: " & thumbnailUrl)
+            Debug.WriteLine("Replace ?feature=youtu.be. Current URL: " & thumbnailUrl)
             ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
             If thumbnailUrl.Contains("youtube.com/watch?v=") Then
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
-                Debug.WriteLine("Current URL: " & thumbnailUrl)
+                Debug.WriteLine("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl)
+            ElseIf thumbnailUrl.Contains("youtu.be/") Then
+                ' If the URL contains "youtu.be/", replace that with "i.ytimg.com/vi/".
+                thumbnailUrl = thumbnailUrl.Replace("youtu.be/", "i.ytimg.com/vi/")
+                Debug.WriteLine("Replace youtu.be. Current URL: " & thumbnailUrl)
             End If
             ' Replace "m." with nothing.
             thumbnailUrl.Replace("m.", "")
+            Debug.WriteLine("Replace m. Current URL: " & thumbnailUrl)
         End If
     End Sub
 End Class
