@@ -28,6 +28,9 @@
 
 Public Class aaformMainWindow
     Private Sub buttonGetThumbnailInBrowser_Click(sender As Object, e As EventArgs) Handles buttonGetThumbnailInBrowser.Click
-
+        ' First, make sure the textbox isn't empty.
+        If Not textboxVideoUrl.Text.Length = 0 Then
+            ' Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/
+        End If
     End Sub
 End Class
