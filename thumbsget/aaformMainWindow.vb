@@ -35,8 +35,12 @@ Public Class aaformMainWindow
             Dim thumbnailUrl As String = textboxVideoUrl.Text
             Debug.WriteLine("Start:")
             Debug.WriteLine("Current URL: " & thumbnailUrl)
+            ' Replace "www." with nothing.
             thumbnailUrl = thumbnailUrl.Replace("www.", "")
             Debug.WriteLine("Replace www. Current URL: " & thumbnailUrl)
+            ' Replace "m." with nothing.
+            thumbnailUrl = thumbnailUrl.Replace("m.", "")
+            Debug.WriteLine("Replace m. Current URL: " & thumbnailUrl)
             ' Replace "?feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
             Debug.WriteLine("Replace ?feature=youtu.be. Current URL: " & thumbnailUrl)
@@ -58,9 +62,9 @@ Public Class aaformMainWindow
             ' Replace "&v=" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("&v=", "")
             Debug.WriteLine("Replace &v=. Current URL: " & thumbnailUrl)
-            ' Replace "m." with nothing.
-            thumbnailUrl = thumbnailUrl.Replace("m.", "")
-            Debug.WriteLine("Replace m. Current URL: " & thumbnailUrl)
+            ' Once again, replace "youtube.com/" with "i.ytimg.com/vi/".
+            thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/")
+            Debug.WriteLine("Replace youtube.com/. Current URL: " & thumbnailUrl)
         End If
     End Sub
 End Class
