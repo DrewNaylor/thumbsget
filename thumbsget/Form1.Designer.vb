@@ -27,6 +27,7 @@ Partial Class aaformMainWindow
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
         Me.labelVideoUrl = New System.Windows.Forms.Label()
+        Me.buttonGetThumbnailInBrowser = New System.Windows.Forms.Button()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
         Me.SuspendLayout()
@@ -49,6 +50,7 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelUrlAndButton.Controls.Add(Me.buttonGetThumbnailInBrowser)
         Me.panelUrlAndButton.Controls.Add(Me.labelVideoUrl)
         Me.panelUrlAndButton.Controls.Add(Me.textboxVideoUrl)
         Me.panelUrlAndButton.Location = New System.Drawing.Point(3, 3)
@@ -82,6 +84,15 @@ Partial Class aaformMainWindow
         Me.labelVideoUrl.TabIndex = 1
         Me.labelVideoUrl.Text = "Video URL:"
         '
+        'buttonGetThumbnailInBrowser
+        '
+        Me.buttonGetThumbnailInBrowser.Location = New System.Drawing.Point(8, 50)
+        Me.buttonGetThumbnailInBrowser.Name = "buttonGetThumbnailInBrowser"
+        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 41)
+        Me.buttonGetThumbnailInBrowser.TabIndex = 2
+        Me.buttonGetThumbnailInBrowser.Text = "Get thumbnail in default browser"
+        Me.buttonGetThumbnailInBrowser.UseVisualStyleBackColor = True
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -105,4 +116,5 @@ Partial Class aaformMainWindow
     Friend WithEvents linklabelAbout As LinkLabel
     Friend WithEvents textboxVideoUrl As TextBox
     Friend WithEvents labelVideoUrl As Label
+    Friend WithEvents buttonGetThumbnailInBrowser As Button
 End Class
