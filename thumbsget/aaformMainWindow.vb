@@ -45,6 +45,8 @@ Public Class aaformMainWindow
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
                 Debug.WriteLine("Current URL: " & thumbnailUrl)
             End If
+            ' Replace "m." with nothing.
+            thumbnailUrl.Replace("m.", "")
         End If
     End Sub
 End Class
