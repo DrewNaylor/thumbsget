@@ -37,8 +37,9 @@ Public Class aaformMainWindow
             ' Replace "?feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
             ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
-
+            If thumbnailUrl.Contains("youtube.com/watch?v=") Then
+                thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
+            End If
         End If
-
     End Sub
 End Class
