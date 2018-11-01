@@ -30,7 +30,13 @@ Public Class aaformMainWindow
     Private Sub buttonGetThumbnailInBrowser_Click(sender As Object, e As EventArgs) Handles buttonGetThumbnailInBrowser.Click
         ' First, make sure the textbox isn't empty.
         If Not textboxVideoUrl.Text.Length = 0 Then
-            ' Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/
+            ' Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/".
+            ' Actually, first replace "www." with "" (nothing).
+            Dim thumbnailUrl As String = textboxVideoUrl.Text
+            thumbnailUrl = thumbnailUrl.Replace("www.", "")
+            ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
+
         End If
+
     End Sub
 End Class
