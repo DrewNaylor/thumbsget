@@ -33,12 +33,17 @@ Public Class aaformMainWindow
             ' Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/".
             ' Actually, first replace "www." with "" (nothing).
             Dim thumbnailUrl As String = textboxVideoUrl.Text
+            Debug.WriteLine("Start:")
+            Debug.WriteLine("Current URL: " & thumbnailUrl)
             thumbnailUrl = thumbnailUrl.Replace("www.", "")
+            Debug.WriteLine("Current URL: " & thumbnailUrl)
             ' Replace "?feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
+            Debug.WriteLine("Current URL: " & thumbnailUrl)
             ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
             If thumbnailUrl.Contains("youtube.com/watch?v=") Then
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
+                Debug.WriteLine("Current URL: " & thumbnailUrl)
             End If
         End If
     End Sub
