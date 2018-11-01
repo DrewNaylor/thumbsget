@@ -24,10 +24,10 @@ Partial Class aaformMainWindow
     Private Sub InitializeComponent()
         Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.panelUrlAndButton = New System.Windows.Forms.Panel()
-        Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
-        Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
-        Me.labelVideoUrl = New System.Windows.Forms.Label()
         Me.buttonGetThumbnailInBrowser = New System.Windows.Forms.Button()
+        Me.labelVideoUrl = New System.Windows.Forms.Label()
+        Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
+        Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
         Me.SuspendLayout()
@@ -58,22 +58,14 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 178)
         Me.panelUrlAndButton.TabIndex = 0
         '
-        'linklabelAbout
+        'buttonGetThumbnailInBrowser
         '
-        Me.linklabelAbout.AutoSize = True
-        Me.linklabelAbout.Location = New System.Drawing.Point(3, 184)
-        Me.linklabelAbout.Name = "linklabelAbout"
-        Me.linklabelAbout.Size = New System.Drawing.Size(35, 13)
-        Me.linklabelAbout.TabIndex = 1
-        Me.linklabelAbout.TabStop = True
-        Me.linklabelAbout.Text = "About"
-        '
-        'textboxVideoUrl
-        '
-        Me.textboxVideoUrl.Location = New System.Drawing.Point(8, 23)
-        Me.textboxVideoUrl.Name = "textboxVideoUrl"
-        Me.textboxVideoUrl.Size = New System.Drawing.Size(501, 20)
-        Me.textboxVideoUrl.TabIndex = 0
+        Me.buttonGetThumbnailInBrowser.Location = New System.Drawing.Point(8, 50)
+        Me.buttonGetThumbnailInBrowser.Name = "buttonGetThumbnailInBrowser"
+        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 41)
+        Me.buttonGetThumbnailInBrowser.TabIndex = 2
+        Me.buttonGetThumbnailInBrowser.Text = "Get thumbnail in default browser"
+        Me.buttonGetThumbnailInBrowser.UseVisualStyleBackColor = True
         '
         'labelVideoUrl
         '
@@ -84,14 +76,24 @@ Partial Class aaformMainWindow
         Me.labelVideoUrl.TabIndex = 1
         Me.labelVideoUrl.Text = "Video URL:"
         '
-        'buttonGetThumbnailInBrowser
+        'textboxVideoUrl
         '
-        Me.buttonGetThumbnailInBrowser.Location = New System.Drawing.Point(8, 50)
-        Me.buttonGetThumbnailInBrowser.Name = "buttonGetThumbnailInBrowser"
-        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 41)
-        Me.buttonGetThumbnailInBrowser.TabIndex = 2
-        Me.buttonGetThumbnailInBrowser.Text = "Get thumbnail in default browser"
-        Me.buttonGetThumbnailInBrowser.UseVisualStyleBackColor = True
+        Me.textboxVideoUrl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.textboxVideoUrl.Location = New System.Drawing.Point(8, 23)
+        Me.textboxVideoUrl.Name = "textboxVideoUrl"
+        Me.textboxVideoUrl.Size = New System.Drawing.Size(501, 20)
+        Me.textboxVideoUrl.TabIndex = 0
+        '
+        'linklabelAbout
+        '
+        Me.linklabelAbout.AutoSize = True
+        Me.linklabelAbout.Location = New System.Drawing.Point(3, 184)
+        Me.linklabelAbout.Name = "linklabelAbout"
+        Me.linklabelAbout.Size = New System.Drawing.Size(35, 13)
+        Me.linklabelAbout.TabIndex = 1
+        Me.linklabelAbout.TabStop = True
+        Me.linklabelAbout.Text = "About"
         '
         'aaformMainWindow
         '
