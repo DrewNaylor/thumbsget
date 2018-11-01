@@ -24,6 +24,7 @@ Partial Class aaformMainWindow
     Private Sub InitializeComponent()
         Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.panelUrlAndButton = New System.Windows.Forms.Panel()
+        Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -34,6 +35,7 @@ Partial Class aaformMainWindow
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.flowlayoutpanelMainWindow.BackColor = System.Drawing.SystemColors.Window
         Me.flowlayoutpanelMainWindow.Controls.Add(Me.panelUrlAndButton)
+        Me.flowlayoutpanelMainWindow.Controls.Add(Me.linklabelAbout)
         Me.flowlayoutpanelMainWindow.Location = New System.Drawing.Point(0, 0)
         Me.flowlayoutpanelMainWindow.Name = "flowlayoutpanelMainWindow"
         Me.flowlayoutpanelMainWindow.Size = New System.Drawing.Size(525, 204)
@@ -46,8 +48,18 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelUrlAndButton.Location = New System.Drawing.Point(3, 3)
         Me.panelUrlAndButton.Name = "panelUrlAndButton"
-        Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 197)
+        Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 178)
         Me.panelUrlAndButton.TabIndex = 0
+        '
+        'linklabelAbout
+        '
+        Me.linklabelAbout.AutoSize = True
+        Me.linklabelAbout.Location = New System.Drawing.Point(3, 184)
+        Me.linklabelAbout.Name = "linklabelAbout"
+        Me.linklabelAbout.Size = New System.Drawing.Size(35, 13)
+        Me.linklabelAbout.TabIndex = 1
+        Me.linklabelAbout.TabStop = True
+        Me.linklabelAbout.Text = "About"
         '
         'aaformMainWindow
         '
@@ -60,10 +72,12 @@ Partial Class aaformMainWindow
         Me.Name = "aaformMainWindow"
         Me.Text = "thumbsget"
         Me.flowlayoutpanelMainWindow.ResumeLayout(False)
+        Me.flowlayoutpanelMainWindow.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents flowlayoutpanelMainWindow As FlowLayoutPanel
     Friend WithEvents panelUrlAndButton As Panel
+    Friend WithEvents linklabelAbout As LinkLabel
 End Class
