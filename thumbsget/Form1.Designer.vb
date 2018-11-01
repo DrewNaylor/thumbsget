@@ -22,17 +22,29 @@ Partial Class aaformMainWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.SuspendLayout()
+        '
+        'flowlayoutpanelMainWindow
+        '
+        Me.flowlayoutpanelMainWindow.BackColor = System.Drawing.SystemColors.Window
+        Me.flowlayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.flowlayoutpanelMainWindow.Location = New System.Drawing.Point(0, 0)
+        Me.flowlayoutpanelMainWindow.Name = "flowlayoutpanelMainWindow"
+        Me.flowlayoutpanelMainWindow.Size = New System.Drawing.Size(284, 261)
+        Me.flowlayoutpanelMainWindow.TabIndex = 0
         '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.flowlayoutpanelMainWindow)
         Me.Name = "aaformMainWindow"
         Me.Text = "thumbsget"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents flowlayoutpanelMainWindow As FlowLayoutPanel
 End Class
