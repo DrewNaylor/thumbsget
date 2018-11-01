@@ -34,6 +34,8 @@ Public Class aaformMainWindow
             ' Actually, first replace "www." with "" (nothing).
             Dim thumbnailUrl As String = textboxVideoUrl.Text
             thumbnailUrl = thumbnailUrl.Replace("www.", "")
+            ' Replace "?feature=youtu.be" with nothing.
+            thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
             ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
 
         End If
