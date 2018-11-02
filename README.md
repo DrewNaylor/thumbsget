@@ -15,3 +15,9 @@ Currently, thumbsget replaces the following things in a URL:
 - "youtube.com/" with "i.ytimg.com/vi/"
 
 I'd like to have it be able to also get rid of playlist info (including the video's index) and the current time position as well, but I haven't figured that out yet without hardcoding anything, using advanced regex, or having the user paste text into a textbox/manually remove text from a URL.
+
+thumbsget doesn't support getting thumbnails from YouTube Studio/Creator Studio links yet, either.
+
+Screenshot:
+
+![](/docs/images/thumbsget-with-thumbnail-in-firefox.png?raw=true)
