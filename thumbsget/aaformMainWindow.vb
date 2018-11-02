@@ -47,7 +47,7 @@ Public Class aaformMainWindow
             ' Replace "&feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("&feature=youtu.be", "")
             Debug.WriteLine("Replace &feature=youtu.be. Current URL: " & thumbnailUrl)
-            ' Now, if "youtube.com/watch?v=" is in the URL, replace it with "i.ytimg.com/vi/".
+            ' Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
             If thumbnailUrl.Contains("youtube.com/watch?") Then
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
                 Debug.WriteLine("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl)
@@ -65,6 +65,10 @@ Public Class aaformMainWindow
             ' Once again, replace "youtube.com/" with "i.ytimg.com/vi/".
             thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/")
             Debug.WriteLine("Replace youtube.com/. Current URL: " & thumbnailUrl)
+
+            ' Add "maxresdefault.jpg" to end of URL.
+            thumbnailUrl = thumbnailUrl & "/maxresdefault.jpg"
+            Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
         End If
     End Sub
 End Class
