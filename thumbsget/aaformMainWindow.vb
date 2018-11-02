@@ -69,6 +69,9 @@ Public Class aaformMainWindow
             ' Add "maxresdefault.jpg" to end of URL.
             thumbnailUrl = thumbnailUrl & "/maxresdefault.jpg"
             Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
+
+            ' Open in default browser.
+            Process.Start(thumbnailUrl)
         End If
     End Sub
 End Class
