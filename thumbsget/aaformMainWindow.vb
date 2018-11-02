@@ -70,8 +70,11 @@ Public Class aaformMainWindow
             thumbnailUrl = thumbnailUrl & "/maxresdefault.jpg"
             Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
 
-            ' Open in default browser.
-            Process.Start(thumbnailUrl)
+            ' Open in default browser if the URL starts with "http://" or "https://".
+            If thumbnailUrl.StartsWith("http://") Or thumbnailUrl.StartsWith("https://") Then
+                Process.Start(thumbnailUrl)
+            End If
+
         End If
     End Sub
 
