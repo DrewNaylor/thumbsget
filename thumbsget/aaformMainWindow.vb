@@ -2,7 +2,7 @@
 'original video URL. Not associated With YouTube or Google/Alphabet.
 'Copyright (C) 2018 Drew Naylor
 'YouTube and all related words are copyright
-'and trademark Google/Alphabet. Also mentioned in About window.
+'and trademark Google/Alphabet. Explained more in About window.
 'Google/Alphabet is not affiliated with either the thumbsget project or Drew Naylor
 'and does not endorse this software.
 'Any other companies mentioned own their respective copyrights/trademarks.
@@ -73,5 +73,41 @@ Public Class aaformMainWindow
             ' Open in default browser.
             Process.Start(thumbnailUrl)
         End If
+    End Sub
+
+    Private Sub linklabelAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linklabelAbout.LinkClicked
+        ' thumbsget About window.
+        ' It's really simple for now.
+        MessageBox.Show(My.Application.Info.Title & vbCrLf &
+                "Version " & My.Application.Info.Version.ToString & vbCrLf &
+                My.Application.Info.Description & vbCrLf &
+                My.Application.Info.Copyright & vbCrLf &
+                vbCrLf &
+                "You can get the code for thumbsget from:" & vbCrLf &
+                "https://github.com/DrewNaylor/thumbsget/" & vbCrLf &
+                vbCrLf &
+                "Below is part of the Gnu GPLv3+ as it applies to " & My.Application.Info.Title & "." & vbCrLf &
+                "Visit http://www.gnu.org/licenses/gpl.html for the full license." & vbCrLf &
+                vbCrLf &
+                "thumbsget is free software: you can redistribute it and/or modify" & vbCrLf &
+                "it under the terms of the GNU General Public License as published by" & vbCrLf &
+                "the Free Software Foundation, either version 3 of the License, or" & vbCrLf &
+                "(at your option) any later version." & vbCrLf &
+                vbCrLf &
+                "thumbsget is distributed in the hope that it will be useful," & vbCrLf &
+                "but WITHOUT ANY WARRANTY; without even the implied warranty of" & vbCrLf &
+                "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the" & vbCrLf &
+                "GNU General Public License for more details." & vbCrLf &
+                vbCrLf &
+                "Copyright notice: YouTube and all related words and" & vbCrLf &
+                "trademarks/registered trademarks owned by Google/Alphabet in the United States" & vbCrLf &
+                "and/or other countries are Copyright 2018 Google/Alphabet. All" & vbCrLf &
+                "Rights Reserved to Google/Alphabet for Google/Alphabet's copyrights, trademarks," & vbCrLf &
+                "and registered trademarks." & vbCrLf &
+                vbCrLf &
+                "Any other companies mentioned own their respective copyrights/trademarks." & vbCrLf &
+                vbCrLf &
+                "Google/Alphabet is not affiliated with either the thumbsget project or" & vbCrLf &
+                "Drew Naylor and does not endorse this software.", "About " & My.Application.Info.Title)
     End Sub
 End Class
