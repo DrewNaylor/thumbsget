@@ -1,5 +1,7 @@
 # thumbsget
 Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.
+After getting the thumbnail URL, it'll open in the default browser. I want to also allow the thumbnail to be previewed in the main window and just have a save button so that opening the browser isn't required.
+
 
 Currently, thumbsget replaces the following things in a URL:
 - "www." with nothing
