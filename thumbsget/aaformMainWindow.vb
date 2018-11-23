@@ -34,6 +34,16 @@ Public Class aaformMainWindow
         End If
     End Sub
 
+    Private Sub buttonPreviewThumbnail_Click(sender As Object, e As EventArgs) Handles buttonPreviewThumbnail.Click
+        ' Loads the video in the video URL bar's thumbnail into the preview image box on the right side.
+        pictureboxPreview.ImageLocation = getThumbnailUrl()
+    End Sub
+
+    Private Sub buttonSaveThumbnail_Click(sender As Object, e As EventArgs) Handles buttonSaveThumbnail.Click
+        ' Save the thumbnail based on the video URL.
+
+    End Sub
+
     Private Sub linklabelAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linklabelAbout.LinkClicked
         ' thumbsget About window.
         ' It's really simple for now.
@@ -68,11 +78,6 @@ Public Class aaformMainWindow
                 vbCrLf &
                 "Google/Alphabet is not affiliated with either the thumbsget project or" & vbCrLf &
                 "Drew Naylor and does not endorse this software.", "About " & My.Application.Info.Title)
-    End Sub
-
-    Private Sub buttonPreviewThumbnail_Click(sender As Object, e As EventArgs) Handles buttonPreviewThumbnail.Click
-        ' Loads the video in the video URL bar's thumbnail into the preview image box on the right side.
-        pictureboxPreview.ImageLocation = getThumbnailUrl()
     End Sub
 
     Private Function getThumbnailUrl() As String
