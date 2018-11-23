@@ -49,7 +49,7 @@ Public Class aaformMainWindow
         savefiledialogSaveThumbnail.FileName = "maxresdefault.jpg"
 
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
-            ' If the user clicks "Ok", save the file.
+            ' If the user clicks "Ok", save the file using a new WebClient.
             Dim thumbnailDownloader As New Net.WebClient
             thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
         End If

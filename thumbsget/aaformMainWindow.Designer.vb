@@ -133,6 +133,8 @@ Partial Class aaformMainWindow
         '
         'savefiledialogSaveThumbnail
         '
+        Me.savefiledialogSaveThumbnail.Filter = "JPG files (*.jpg)|*.jpg|JPEG files (*.jpeg)|*.jpeg|PNG files (*.png)|*.png|All fi" &
+    "les (*.*)|*.*"
         Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
         '
