@@ -45,14 +45,15 @@ Public Class aaformMainWindow
         ' Save the thumbnail based on the video URL.
         ' I got some of this code from https://docs.microsoft.com/en-us/dotnet/api/system.net.webclient.downloadfile?view=netframework-4.6.1#System_Net_WebClient_DownloadFile_System_String_System_String_
 
+        ' Set filename for save file dialog.
+        savefiledialogSaveThumbnail.FileName = "maxresdefault.jpg"
+
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
             ' If the user clicks "Ok", save the file.
             Dim thumbnailDownloader As New Net.WebClient
             thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
         End If
 
-
-        'End If
     End Sub
 
     Private Sub linklabelAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linklabelAbout.LinkClicked
@@ -91,10 +92,7 @@ Public Class aaformMainWindow
                 "Drew Naylor and does not endorse this software.", "About " & My.Application.Info.Title)
     End Sub
 
-    Private Function getThumbnailUrl(Optional onlyReturnVideoID As Boolean = False) As String
-        ' Make a variable for the video ID if only that is what we want.
-        Dim videoID As String = "fgjgfgfjgjj"
-
+    Private Function getThumbnailUrl() As String
         ' This takes the URL in the video URL bar and gets the thumbnail URL for it.
         ' First, make sure the textbox isn't empty.
         If Not textboxVideoUrl.Text.Length = 0 Then
@@ -140,25 +138,12 @@ Public Class aaformMainWindow
 
             ' Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
             ' is = False.
-            ' Also change thumbnailUrl into a URI.
-            If onlyReturnVideoID = False Then
-                Return thumbnailUrl
-            Else
-                ' Otherwise, return only the video ID.
-                Return videoID
-            End If
+            Return thumbnailUrl
         Else
 
             ' If the textbox for the video URL is empty, just return the thumbnail of
             ' one of my Luigi's Mansion episodes.
-            ' This is done if onlyReturnVideoID is false.
-            If onlyReturnVideoID = False Then
-                Return "https://i.ytimg.com/vi/NcC8YGztc1Y/maxresdefault.jpg"
-            Else
-                ' Otherwise, only return the video ID.
-                Return videoID
-            End If
-
+            Return "https://i.ytimg.com/vi/NcC8YGztc1Y/maxresdefault.jpg"
         End If
 
     End Function
