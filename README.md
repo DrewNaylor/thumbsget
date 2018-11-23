@@ -1,6 +1,12 @@
 # thumbsget
 Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.
 
+After getting the thumbnail URL, it'll open in the default browser. As of November 23, 2018, you can also preview and save the thumbnail directly from thumbsget.
+
+Project build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget)
+
+Master branch build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd/branch/master?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget/branch/master)
+
 License notice:
 ```
 thumbsget - Gets the maxresdefault thumbnail for YouTube videos from
@@ -28,12 +34,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with thumbsget.  If not, see <http://www.gnu.org/licenses/>.
 ```
-
-After getting the thumbnail URL, it'll open in the default browser. As of November 23, 2018, you can also preview and save the thumbnail directly from thumbsget.
-
-Project build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget)
-
-Master branch build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd/branch/master?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget/branch/master)
 
 Currently, thumbsget replaces the following things in a URL:
 - "www." with nothing
