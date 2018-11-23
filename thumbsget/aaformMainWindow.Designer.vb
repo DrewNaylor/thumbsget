@@ -67,9 +67,9 @@ Partial Class aaformMainWindow
         '
         Me.buttonGetThumbnailInBrowser.Location = New System.Drawing.Point(8, 50)
         Me.buttonGetThumbnailInBrowser.Name = "buttonGetThumbnailInBrowser"
-        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 41)
+        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 29)
         Me.buttonGetThumbnailInBrowser.TabIndex = 2
-        Me.buttonGetThumbnailInBrowser.Text = "Get thumbnail in default browser"
+        Me.buttonGetThumbnailInBrowser.Text = "View thumbnail in browser"
         Me.buttonGetThumbnailInBrowser.UseVisualStyleBackColor = True
         '
         'labelVideoUrl
@@ -111,9 +111,9 @@ Partial Class aaformMainWindow
         '
         'buttonPreviewThumbnail
         '
-        Me.buttonPreviewThumbnail.Location = New System.Drawing.Point(8, 98)
+        Me.buttonPreviewThumbnail.Location = New System.Drawing.Point(8, 85)
         Me.buttonPreviewThumbnail.Name = "buttonPreviewThumbnail"
-        Me.buttonPreviewThumbnail.Size = New System.Drawing.Size(158, 23)
+        Me.buttonPreviewThumbnail.Size = New System.Drawing.Size(158, 29)
         Me.buttonPreviewThumbnail.TabIndex = 4
         Me.buttonPreviewThumbnail.Text = "Preview thumbnail"
         Me.buttonPreviewThumbnail.UseVisualStyleBackColor = True
