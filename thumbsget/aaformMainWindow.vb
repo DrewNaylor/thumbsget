@@ -141,7 +141,7 @@ Public Class aaformMainWindow
 
             ' If the textbox for the video URL is empty, just return the thumbnail of
             ' one of my Luigi's Mansion episodes.
-            Return "https://i.ytimg.com/vi/NcC8YGztc1Y/maxresdefault.jpg"
+            Return "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg"
         End If
 
     End Function
