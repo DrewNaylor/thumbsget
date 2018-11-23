@@ -29,6 +29,7 @@ Partial Class aaformMainWindow
         Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
+        Me.buttonPreviewThumbnail = New System.Windows.Forms.Button()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,6 +53,7 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelUrlAndButton.Controls.Add(Me.buttonPreviewThumbnail)
         Me.panelUrlAndButton.Controls.Add(Me.pictureboxPreview)
         Me.panelUrlAndButton.Controls.Add(Me.buttonGetThumbnailInBrowser)
         Me.panelUrlAndButton.Controls.Add(Me.labelVideoUrl)
@@ -107,6 +109,15 @@ Partial Class aaformMainWindow
         Me.pictureboxPreview.TabIndex = 3
         Me.pictureboxPreview.TabStop = False
         '
+        'buttonPreviewThumbnail
+        '
+        Me.buttonPreviewThumbnail.Location = New System.Drawing.Point(8, 98)
+        Me.buttonPreviewThumbnail.Name = "buttonPreviewThumbnail"
+        Me.buttonPreviewThumbnail.Size = New System.Drawing.Size(158, 23)
+        Me.buttonPreviewThumbnail.TabIndex = 4
+        Me.buttonPreviewThumbnail.Text = "Preview thumbnail"
+        Me.buttonPreviewThumbnail.UseVisualStyleBackColor = True
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -133,4 +144,5 @@ Partial Class aaformMainWindow
     Friend WithEvents labelVideoUrl As Label
     Friend WithEvents buttonGetThumbnailInBrowser As Button
     Friend WithEvents pictureboxPreview As PictureBox
+    Friend WithEvents buttonPreviewThumbnail As Button
 End Class
