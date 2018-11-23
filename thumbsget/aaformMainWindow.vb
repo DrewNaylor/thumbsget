@@ -46,9 +46,20 @@ Public Class aaformMainWindow
         ' I got some of this code from https://stackoverflow.com/a/15169800
 
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
-            My.Computer.Network.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
-
+            'If My.Computer.FileSystem.FileExists(savefiledialogSaveThumbnail.FileName) Then
+            '    ' If the file exists, ask the user if they want to overwrite it.
+            '    Select Case MsgBox("The file " & """" & savefiledialogSaveThumbnail.FileName & """ already exists. Overwrite?", MsgBoxStyle.YesNo, "File exists")
+            '        Case MsgBoxResult.Yes
+            '            ' Overwrite the file.
+            Dim thumbnailDownloader As New Net.WebClient
+            thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
+            '    Case MsgBoxResult.No
+            '        ' This just skips this code.
+            'End Select
         End If
+
+
+        'End If
     End Sub
 
     Private Sub linklabelAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linklabelAbout.LinkClicked
@@ -135,7 +146,8 @@ Public Class aaformMainWindow
             Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
 
             ' Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
-            ' is = False
+            ' is = False.
+            ' Also change thumbnailUrl into a URI.
             If onlyReturnVideoID = False Then
                 Return thumbnailUrl
             Else
