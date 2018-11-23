@@ -102,6 +102,7 @@ Partial Class aaformMainWindow
         '
         'pictureboxPreview
         '
+        Me.pictureboxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pictureboxPreview.Location = New System.Drawing.Point(172, 50)
         Me.pictureboxPreview.Name = "pictureboxPreview"
         Me.pictureboxPreview.Size = New System.Drawing.Size(337, 123)
