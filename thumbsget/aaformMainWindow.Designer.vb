@@ -28,8 +28,10 @@ Partial Class aaformMainWindow
         Me.labelVideoUrl = New System.Windows.Forms.Label()
         Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
+        Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
+        CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'flowlayoutpanelMainWindow
@@ -50,6 +52,7 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelUrlAndButton.Controls.Add(Me.pictureboxPreview)
         Me.panelUrlAndButton.Controls.Add(Me.buttonGetThumbnailInBrowser)
         Me.panelUrlAndButton.Controls.Add(Me.labelVideoUrl)
         Me.panelUrlAndButton.Controls.Add(Me.textboxVideoUrl)
@@ -95,6 +98,15 @@ Partial Class aaformMainWindow
         Me.linklabelAbout.TabStop = True
         Me.linklabelAbout.Text = "About"
         '
+        'pictureboxPreview
+        '
+        Me.pictureboxPreview.Location = New System.Drawing.Point(172, 50)
+        Me.pictureboxPreview.Name = "pictureboxPreview"
+        Me.pictureboxPreview.Size = New System.Drawing.Size(337, 123)
+        Me.pictureboxPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pictureboxPreview.TabIndex = 3
+        Me.pictureboxPreview.TabStop = False
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -109,6 +121,7 @@ Partial Class aaformMainWindow
         Me.flowlayoutpanelMainWindow.PerformLayout()
         Me.panelUrlAndButton.ResumeLayout(False)
         Me.panelUrlAndButton.PerformLayout()
+        CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -119,4 +132,5 @@ Partial Class aaformMainWindow
     Friend WithEvents textboxVideoUrl As TextBox
     Friend WithEvents labelVideoUrl As Label
     Friend WithEvents buttonGetThumbnailInBrowser As Button
+    Friend WithEvents pictureboxPreview As PictureBox
 End Class
