@@ -24,4 +24,4 @@ thumbsget doesn't support getting thumbnails from YouTube Studio/Creator Studio 
 
 Screenshot:
 
-![](/docs/images/thumbsget-with-thumbnail-in-firefox.png?raw=true)
+![](/docs/images/thumbsget-with-thumbnail-in-firefox-and-preview.png?raw=true)
