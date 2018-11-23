@@ -43,19 +43,12 @@ Public Class aaformMainWindow
 
     Private Sub buttonSaveThumbnail_Click(sender As Object, e As EventArgs) Handles buttonSaveThumbnail.Click
         ' Save the thumbnail based on the video URL.
-        ' I got some of this code from https://stackoverflow.com/a/15169800
+        ' I got some of this code from https://docs.microsoft.com/en-us/dotnet/api/system.net.webclient.downloadfile?view=netframework-4.6.1#System_Net_WebClient_DownloadFile_System_String_System_String_
 
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
-            'If My.Computer.FileSystem.FileExists(savefiledialogSaveThumbnail.FileName) Then
-            '    ' If the file exists, ask the user if they want to overwrite it.
-            '    Select Case MsgBox("The file " & """" & savefiledialogSaveThumbnail.FileName & """ already exists. Overwrite?", MsgBoxStyle.YesNo, "File exists")
-            '        Case MsgBoxResult.Yes
-            '            ' Overwrite the file.
+            ' If the user clicks "Ok", save the file.
             Dim thumbnailDownloader As New Net.WebClient
             thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
-            '    Case MsgBoxResult.No
-            '        ' This just skips this code.
-            'End Select
         End If
 
 
