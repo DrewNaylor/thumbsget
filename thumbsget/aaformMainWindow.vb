@@ -26,8 +26,6 @@
 
 
 
-Imports System.IO
-
 Public Class aaformMainWindow
     Private Sub buttonGetThumbnailInBrowser_Click(sender As Object, e As EventArgs) Handles buttonGetThumbnailInBrowser.Click
         ' Open in default browser if the URL starts with "http://" or "https://".
