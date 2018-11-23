@@ -45,9 +45,8 @@ Public Class aaformMainWindow
         ' Save the thumbnail based on the video URL.
         ' I got some of this code from https://stackoverflow.com/a/15169800
 
-        Dim thumbnailStream As Stream = 
-
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
+            My.Computer.Network.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
 
         End If
     End Sub
