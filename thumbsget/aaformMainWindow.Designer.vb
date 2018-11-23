@@ -133,6 +133,7 @@ Partial Class aaformMainWindow
         '
         'savefiledialogSaveThumbnail
         '
+        Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
         '
         'aaformMainWindow
