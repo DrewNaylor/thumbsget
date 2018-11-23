@@ -31,6 +31,7 @@ Partial Class aaformMainWindow
         Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
         Me.buttonPreviewThumbnail = New System.Windows.Forms.Button()
         Me.buttonSaveThumbnail = New System.Windows.Forms.Button()
+        Me.savefiledialogSaveThumbnail = New System.Windows.Forms.SaveFileDialog()
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,6 +131,10 @@ Partial Class aaformMainWindow
         Me.buttonSaveThumbnail.Text = "Save thumbnail"
         Me.buttonSaveThumbnail.UseVisualStyleBackColor = True
         '
+        'savefiledialogSaveThumbnail
+        '
+        Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -158,4 +163,5 @@ Partial Class aaformMainWindow
     Friend WithEvents pictureboxPreview As PictureBox
     Friend WithEvents buttonPreviewThumbnail As Button
     Friend WithEvents buttonSaveThumbnail As Button
+    Friend WithEvents savefiledialogSaveThumbnail As SaveFileDialog
 End Class
