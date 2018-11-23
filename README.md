@@ -1,7 +1,7 @@
 # thumbsget
 Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.
 
-After getting the thumbnail URL, it'll open in the default browser. I want to also allow the thumbnail to be previewed in the main window and just have a save button so that opening the browser isn't required.
+After getting the thumbnail URL, it'll open in the default browser. As of November 23, 2018, you can also preview and save the thumbnail directly from thumbsget.
 
 Project build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget)
 
