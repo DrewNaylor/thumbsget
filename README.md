@@ -88,7 +88,7 @@ In addition to the requirements for simply running thumbsget, your computer requ
 - [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
   - If [Visual Studio 2015 Community](https://www.visualstudio.com/vs/older-downloads/) is installed, Microsoft Build Tools 2015 is not required for building thumbsget.
 
-If you want to try the latest changes from the master branch, you can download the latest build's [artifacts from AppVeyor](https://ci.appveyor.com/project/DrewNaylor/thumbsget/build/artifacts). When the download has completed, extract the archive, then open the `Debug` folder. In this folder, double-click on `thumbsget.exe`.
+If you want to try the latest changes from the master branch, you can download the latest build's [artifacts from AppVeyor](https://ci.appveyor.com/project/DrewNaylor/thumbsget/branch/master/artifacts). When the download has completed, extract the archive, then open the `Debug` folder. In this folder, double-click on `thumbsget.exe`.
 
 ***
 
