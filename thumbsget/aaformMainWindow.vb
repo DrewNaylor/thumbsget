@@ -113,4 +113,9 @@ Public Class aaformMainWindow
                 "Google/Alphabet is not affiliated with either the thumbsget project or" & vbCrLf &
                 "Drew Naylor and does not endorse this software.", "About " & My.Application.Info.Title)
     End Sub
+
+    Private Sub buttonPreviewThumbnail_Click(sender As Object, e As EventArgs) Handles buttonPreviewThumbnail.Click
+        ' Loads the video in the video URL bar's thumbnail into the preview image box on the right side.
+
+    End Sub
 End Class
