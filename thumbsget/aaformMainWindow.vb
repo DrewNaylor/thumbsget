@@ -72,7 +72,7 @@ Public Class aaformMainWindow
 
     Private Sub buttonPreviewThumbnail_Click(sender As Object, e As EventArgs) Handles buttonPreviewThumbnail.Click
         ' Loads the video in the video URL bar's thumbnail into the preview image box on the right side.
-
+        pictureboxPreview.ImageLocation = getThumbnailUrl()
     End Sub
 
     Private Function getThumbnailUrl() As String
