@@ -118,4 +118,9 @@ Public Class aaformMainWindow
         ' Loads the video in the video URL bar's thumbnail into the preview image box on the right side.
 
     End Sub
+
+    Private Function getThumbnailUrl() As String
+        ' This takes the URL in the video URL bar and gets the thumbnail URL for it.
+
+    End Function
 End Class
