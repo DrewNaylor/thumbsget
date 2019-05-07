@@ -15,38 +15,41 @@
             var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
             var thumbnailUrl = new String(document.getElementById("video_url").value);
 
+            alert(thumbnailUrl.length);
+
             // Next, we need to make sure there's stuff in the textbox.
-            if (thumbnailPreview.length)
+            if (thumbnailUrl.length)
             // Now we can do stuff and replace text.
             {
                 // Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/".
                 // Actually, first replace "www." with "" (nothing).
 
-                console.info("Start:")
-                console.info("Current URL: " & thumbnailUrl)
+                console.info("Start:");
+                console.info("Current URL: " & thumbnailUrl);
 
                 // Replace "www." with nothing.
-                thumbnailUrl = thumbnailUrl.replace("www.", "")
-                console.info("Replace www. Current URL: " & thumbnailUrl)
+                thumbnailUrl = thumbnailUrl.replace("www.", "");
+                console.info("Replace www. Current URL: " & thumbnailUrl);
 
                 // Replace "m." with nothing.
-                thumbnailUrl = thumbnailUrl.replace("m.", "")
-                console.info("Replace m. Current URL: " & thumbnailUrl)
+                thumbnailUrl = thumbnailUrl.replace("m.", "");
+                console.info("Replace m. Current URL: " & thumbnailUrl);
 
                 // Replace "?feature=youtu.be" with nothing.
-                thumbnailUrl = thumbnailUrl.replace("?feature=youtu.be", "")
-                console.info("Replace ?feature=youtu.be. Current URL: " & thumbnailUrl)
+                thumbnailUrl = thumbnailUrl.replace("?feature=youtu.be", "");
+                console.info("Replace ?feature=youtu.be. Current URL: " & thumbnailUrl);
 
                 // Replace "&feature=youtu.be" with nothing.
-                thumbnailUrl = thumbnailUrl.replace("&feature=youtu.be", "")
-                console.info("Replace &feature=youtu.be. Current URL: " & thumbnailUrl)
+                thumbnailUrl = thumbnailUrl.replace("&feature=youtu.be", "");
+                console.info("Replace &feature=youtu.be. Current URL: " & thumbnailUrl);
 
                 // Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
                 if thumbnailUrl.includes("youtube.com/watch?")
-                    {
-                thumbnailUrl = thumbnailUrl.replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
-                console.info("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl)
-                } else if thumbnailUrl.Contains("youtu.be/")
+                {
+                thumbnailUrl = thumbnailUrl.replace("youtube.com/watch?v=", "i.ytimg.com/vi/");
+                console.info("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl);
+                } 
+                else if thumbnailUrl.Contains("youtu.be/")
                     {
 
                 // If the URL contains "youtu.be/", replace that with "i.ytimg.com/vi/".
@@ -56,9 +59,11 @@
                 // Replace "watch" with nothing.
                 thumbnailUrl = thumbnailUrl.Replace("watch", "")
                 console.info("Replace watch. Current URL: " & thumbnailUrl)
+
                 // Replace "&v=" with nothing.
                 thumbnailUrl = thumbnailUrl.Replace("&v=", "")
                 console.info("Replace &v=. Current URL: " & thumbnailUrl)
+
                 // Once again, replace "youtube.com/" with "i.ytimg.com/vi/".
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/")
                 console.info("Replace youtube.com/. Current URL: " & thumbnailUrl)
