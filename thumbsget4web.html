@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>thumbsget4web</title>
+  <style type="text/css">
+  </style>
+</head>
+<body>
+
+    <form>
+    Video URL: <input type="text" name="video_url">
+    <br>
+    <br>
+    <button type="button" onclick="save_thumbnail(video_url)">Save thumbnail...</button>
+    <br>
+    <button type="button" onclick="preview_thumbnail(video_url)">Preview thumbnail</button>
+    </form>
+
+    <canvas id="thumbnail" width="337" height="123">
+        Your browser doesn't support the <code>canvas</code> tag.<br>
+        Please use a different browser, or use the <a href="https://github.com/drewnaylor/thumbsget" target="_blank">application version
+        of thumbsget</a>
+    </canvas>
+</body>
+</html>
