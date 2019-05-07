@@ -4,37 +4,25 @@
   <title>thumbsget4web</title>
 </head>
 <body>
+    <script type="text/javascript">
+        function previewThumbnail(){
+        var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
+        thumbnailPreviewBox.src = "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg";
+        }
+    </script>
 
-    <form>
+   <form>
     Video URL: <input type="text" name="video_url">
     <br>
     <br>
-    <button type="button" onclick="save_thumbnail(video_url)">Save thumbnail...</button>
+    <input type="button" onclick="save_thumbnail(video_url)" value="Save thumbnail...">
     <br>
-    <button type="button" onclick="preview_thumbnail()">Preview thumbnail</button>
-    </form>
+    <input type="button" onclick="previewThumbnail()" value="Preview thumbnail"> 
+   </form>
 
-    <canvas id="thumbnailImageBox" width="337" height="123">
-        Your browser doesn't support the canvas tag.
-        Please use a different browser, or use the
-        standard desktop application version
-        of thumbsget instead.
-    </canvas>
-
-    <script id="getThumbnailUrl">
-    <!--This takes the URL in the video URL bar and gets the thumbnail URL for it.
-        First, make sure the textbox isn't empty.-->
-        var thumbnailUrl = video_url;
-        if 
+   <img id="thumbnailImageBox" width="337" height="123" src="">
+    
 
 
-    </script>
-
-    <script type="text/javascript">
-        var thumbnailPreview = document.getElementById("thumbnailImageBox");
-        var context = thumbnailPreview.getContext("2d");
-        var image = document.getElementById("video_url");
-        context.drawImage(image);
-    </script>
 </body>
 </html>
