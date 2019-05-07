@@ -15,7 +15,7 @@
             var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
             var thumbnailUrl = new String(document.getElementById("video_url").value);
 
-            alert(thumbnailUrl.length);
+            alert("thumbnailUrl.length: " + thumbnailUrl.length);
 
             // Next, we need to make sure there's stuff in the textbox.
             if (thumbnailUrl.length)
@@ -75,7 +75,7 @@
 
 
 
-            //alert(thumbnailPreview)
+            alert(thumbnailPreview)
             thumbnailPreviewBox.src = thumbnailPreview;
         }</script>
 
@@ -85,7 +85,7 @@
     <br>
     <input type="button" onclick="save_thumbnail(video_url)" value="Save thumbnail...">
     <br>
-    <input type="button" onclick="previewThumbnail()" value="Preview thumbnail"> 
+    <input type="button" onclick="getThumbnailUrl()" value="Preview thumbnail"> 
    </form>
 
    <img id="thumbnailImageBox" width="320" src="">
