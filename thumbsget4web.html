@@ -12,7 +12,7 @@
             // First we need to define the image box so we can set
             // the preview in it.
             var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
-            var thumbnailPreview = new String(document.getElementById('video_url'));
+            var thumbnailPreview = new String(document.getElementById("video_url").value);
             alert(thumbnailPreview)
 
 
@@ -24,7 +24,7 @@
         </script>
 
    <form>
-    <label for:"video_url">Video URL:</label> <input type="text" name="video_url" value="">
+    <label for:"video_url">Video URL:</label> <input type="text" id="video_url" value="fdfjdds">
     <br>
     <br>
     <input type="button" onclick="save_thumbnail(video_url)" value="Save thumbnail...">
