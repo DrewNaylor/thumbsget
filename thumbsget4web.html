@@ -59,6 +59,10 @@
                 thumbnailUrl = thumbnailUrl.replace("&feature=youtu.be", "");
                 console.info("Replace &feature=youtu.be. Current URL: " + thumbnailUrl);
 
+                // Replace "&feature=share" with nothing.
+                thumbnailUrl = thumbnailUrl.replace("&feature=share", "");
+                console.info("Replace &feature=share. Current URL: " + thumbnailUrl);
+
                 // Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
                 if (thumbnailUrl.includes("youtube.com/watch?"))
                 {
