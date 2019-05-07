@@ -71,13 +71,18 @@
                 // Add "maxresdefault.jpg" to end of URL.
                 thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg"
                 console.info("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
+
+                // Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
+                return thumbnailUrl
+            } else
+                {
+
+            // If the textbox for the video URL is empty, just return the thumbnail of
+            // one of my Luigi's Mansion episodes.
+            return "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg"
+                }
             }
-
-
-
-            alert(thumbnailPreview)
-            thumbnailPreviewBox.src = thumbnailPreview;
-        }</script>
+        </script>
 
    <form>
     <label for:"video_url">Video URL:</label> <input type="text" id="video_url">
