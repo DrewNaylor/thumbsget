@@ -44,12 +44,12 @@
                 console.info("Replace &feature=youtu.be. Current URL: " & thumbnailUrl);
 
                 // Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
-                if thumbnailUrl.includes("youtube.com/watch?")
+                if (thumbnailUrl.includes("youtube.com/watch?"))
                 {
                 thumbnailUrl = thumbnailUrl.replace("youtube.com/watch?v=", "i.ytimg.com/vi/");
                 console.info("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl);
                 } 
-                else if thumbnailUrl.Contains("youtu.be/")
+                else if (thumbnailUrl.Contains("youtu.be/"))
                     {
 
                 // If the URL contains "youtu.be/", replace that with "i.ytimg.com/vi/".
