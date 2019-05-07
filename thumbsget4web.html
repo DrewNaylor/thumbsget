@@ -15,14 +15,11 @@
 
             var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
             thumbnailPreviewBox.src = getThumbnailUrl();
-
-
         }
 
         function getThumbnailUrl() {
             // First we need to define the image box so we can set
             // the preview in it.
-            var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
             var thumbnailUrl = new String(document.getElementById("video_url").value);
 
             alert("thumbnailUrl.length: " + thumbnailUrl.length);
