@@ -14,15 +14,15 @@
     <button type="button" onclick="preview_thumbnail(video_url)">Preview thumbnail</button>
     </form>
 
-    <canvas id="thumbnail" width="337" height="123">
+    <canvas id="thumbnailImageBox" width="337" height="123">
         Your browser doesn't support the <code>canvas</code> tag.<br>
         Please use a different browser, or use the <a href="https://github.com/drewnaylor/thumbsget" target="_blank">application version
         of thumbsget</a>
     </canvas>
 
     <script id="getThumbnailUrl">
-    var thumbnailUrl = video_url;
-
-    </script>
+    <!--This takes the URL in the video URL bar and gets the thumbnail URL for it.
+        First, make sure the textbox isn't empty.-->
+        var thumbnailUrl = video_url;</script>
 </body>
 </html>
