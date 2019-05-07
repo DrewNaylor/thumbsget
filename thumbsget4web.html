@@ -4,28 +4,27 @@
   <title>thumbsget4web</title>
 </head>
 <body>
-    <script type="text/javascript">
-        // Some parts of this JS were based on this
+    <script type="text/javascript">// Some parts of this JS were based on this
         // SO answer:
         // https://stackoverflow.com/a/11219605
 
-        function previewThumbnail(){
+        function previewThumbnail() {
             // First we need to define the image box so we can set
             // the preview in it.
-          var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
+            var thumbnailPreviewBox = document.getElementById("thumbnailImageBox");
+            var thumbnailPreview = document.getElementById("video_url");
 
 
 
 
 
 
-
-          thumbnailPreviewBox.src = "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg";
+            thumbnailPreviewBox.src = thumbnailPreview;
         }
-    </script>
+        </script>
 
    <form>
-    Video URL: <input type="text" name="video_url">
+    <label for:"video_url">Video URL:</label> <input type="text" name="video_url">
     <br>
     <br>
     <input type="button" onclick="save_thumbnail(video_url)" value="Save thumbnail...">
