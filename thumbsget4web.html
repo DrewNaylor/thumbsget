@@ -11,7 +11,7 @@
     <br>
     <button type="button" onclick="save_thumbnail(video_url)">Save thumbnail...</button>
     <br>
-    <button type="button" onclick="preview_thumbnail(video_url)">Preview thumbnail</button>
+    <button type="button" onclick="preview_thumbnail()">Preview thumbnail</button>
     </form>
 
     <canvas id="thumbnailImageBox" width="337" height="123">
@@ -28,6 +28,13 @@
         if 
 
 
+    </script>
+
+    <script type="text/javascript">
+        var thumbnailPreview = document.getElementById("thumbnailImageBox");
+        var context = thumbnailPreview.getContext("2d");
+        var image = document.getElementById("video_url");
+        context.drawImage(image);
     </script>
 </body>
 </html>
