@@ -25,6 +25,8 @@
             // Based off the JS from here:
             // https://www.codeproject.com/tips/626993/html5-download-attribute
 
+
+
         }
 
         function getThumbnailUrl() {
@@ -32,15 +34,12 @@
             // the preview in it.
             var thumbnailUrl = new String(document.getElementById("video_url").value);
 
-            alert("thumbnailUrl.length: " + thumbnailUrl.length);
-
             // Next, we need to make sure there's stuff in the textbox.
             if (thumbnailUrl.length > 0)
             // Now we can do stuff and replace text.
             {
                 // Look at the URL, and replace "www.youtube.com/watch?v=" with "i.ytimg.com/vi/".
                 // Actually, first replace "www." with "" (nothing).
-                alert("is greater than 0")
                 console.info("Start:");
                 console.info("Current URL: " + thumbnailUrl);
 
