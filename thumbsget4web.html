@@ -44,9 +44,10 @@
                 ' Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
                 if thumbnailUrl.includes("youtube.com/watch?")
                     {
-                thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
-                Debug.WriteLine("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl)
-                } else if { thumbnailUrl.Contains("youtu.be/") Then
+                thumbnailUrl = thumbnailUrl.replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
+                console.info("Replace youtube.com/watch?v=. Current URL: " & thumbnailUrl)
+                } else if thumbnailUrl.Contains("youtu.be/")
+                    {
 
                 ' If the URL contains "youtu.be/", replace that with "i.ytimg.com/vi/".
                 thumbnailUrl = thumbnailUrl.Replace("youtu.be/", "i.ytimg.com/vi/")
