@@ -18,11 +18,10 @@ namespace thumbsget4mac
             // Do any additional setup after loading the view.
         }
 
-        partial void buttonViewThumbnailInBrowser (NSObject sender)
+        partial void buttonViewThumbnailInBrowser(NSObject sender)
         {
             // Get the thumbnail URL open in the browser.
-            if (textboxVideoUrl.StringValue.Length > 0)
-            {}
+            Process.Start(getThumbnailUrl);
         }
 
         public override NSObject RepresentedObject
@@ -38,7 +37,7 @@ namespace thumbsget4mac
             }
         }
 
-        internal string getThumbnailUrl()
+        private string getThumbnailUrl()
         {
             // Now we can start trying to get the thumbnail's URL.
             if (textboxVideoUrl.StringValue.Length > 0)
@@ -102,10 +101,13 @@ namespace thumbsget4mac
                 // Return the thumbnail URL if the textbox isn't empty.
                 return thumbnailUrl;
             }
-            // If the textbox for the video URL is empty, just return the thumbnail of
-            // one of my Luigi's Mansion episodes.
-            return "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg";
+            else
+            {
+                // If the textbox for the video URL is empty, just return the thumbnail of
+                // one of my Luigi's Mansion episodes.
+                return "https://i.ytimg.com/vi/kK7TJIMab7g/maxresdefault.jpg";
+            }
         }
-        }
+    }
 
 }
