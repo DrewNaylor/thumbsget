@@ -8,3 +8,8 @@ It requires at least macOS 10.13 High Sierra, and is being developed using Visua
 
 
 To open this project in Visual Studio, please use `./thumbsget4mac/thumbsget4mac.sln` 
+
+
+Screenshot:
+
+![](../docs/images/thumbsget4mac-with-preview-and-thumbnail-in-firefox.png?raw=true)
