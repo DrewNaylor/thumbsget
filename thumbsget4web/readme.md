@@ -1,6 +1,6 @@
 # thumbsget4web
 
-This is a port of thumbsget to a webpage that uses JavaScript to show the thumbnails in the image box.
+This is a port of thumbsget to a webpage that uses JavaScript to show the thumbnails in the preview box.
 
 For now, it won't look very good until some CSS styling is done.
 
