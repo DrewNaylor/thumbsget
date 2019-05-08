@@ -39,9 +39,9 @@ namespace thumbsget4mac
             // Loads the video in the video URL bar's thumbnail
             // into the preview image box on the right side.
 
-            NSUrl imageUrl = new NSUrl(getThumbnailUrl());
-            NSImage image = new NSImage(imageUrl);
-            pictureboxPreview.Image = image;
+            NSUrl thumbnailUrl = new NSUrl(getThumbnailUrl());
+            NSImage thumbnailPreview = new NSImage(thumbnailUrl);
+            pictureboxPreview.Image = thumbnailPreview;
         }
 
         public override NSObject RepresentedObject
