@@ -18,12 +18,10 @@
         }
 
         function saveThumbnail() {
-            // This is used to actually save the thumbnail
-            // to the user's computer or device.
-            // We need to use some JS to make sure
-            // the user can use this function.
-            // Based off the JS from here:
-            // https://www.codeproject.com/tips/626993/html5-download-attribute
+            // This is used to open the thumbnail in a new tab.
+            // We can't download the image directly since most
+            // browsers block cross-domain download requests.
+            window.open(getThumbnailUrl(), '_blank');
 
 
 
