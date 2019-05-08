@@ -22,6 +22,9 @@ namespace thumbsget4mac
         {
             // Make sure the textbox starts with http:// 
             // or https://.
+            // The double bars (||) make it so that if the thing on the left is false,
+            // the comparison will continue on the right. If the one on the left is
+            // true, this should be faster than using a single bar (|).
             if (textboxVideoUrl.StringValue.StartsWith("https://", StringComparison.CurrentCulture)
                 || (textboxVideoUrl.StringValue.StartsWith("http://", StringComparison.CurrentCulture)))
             // Get the thumbnail URL open in the browser.
