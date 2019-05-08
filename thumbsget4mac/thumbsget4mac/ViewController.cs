@@ -20,8 +20,12 @@ namespace thumbsget4mac
 
         partial void buttonViewThumbnailInBrowser(NSObject sender)
         {
+            // Make sure the textbox starts with http:// 
+            // or https://.
+            if (textboxVideoUrl.StringValue.StartsWith("https://", StringComparison.CurrentCulture)
+                || (textboxVideoUrl.StringValue.StartsWith("http://", StringComparison.CurrentCulture)))
             // Get the thumbnail URL open in the browser.
-            Process.Start(getThumbnailUrl);
+            Process.Start(getThumbnailUrl());
         }
 
         public override NSObject RepresentedObject
