@@ -3,6 +3,8 @@ Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not
 
 After getting the thumbnail URL, it'll open in the default browser. As of November 23, 2018, you can also preview and save the thumbnail directly from the main thumbsget window.
 
+A port for macOS is in the works under the `thumbsget4mac` folder, and there's also a port to a webpage under the `thumbsget4web` folder.
+
 Project build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget)
 
 Master branch build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd/branch/master?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget/branch/master)
