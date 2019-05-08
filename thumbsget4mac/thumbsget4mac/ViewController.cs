@@ -38,7 +38,14 @@ namespace thumbsget4mac
             }
         }
 
+        internal string getThumbnailUrl()
+        {
+            // Now we can start trying to get the thumbnail's URL.
+            if (textboxVideoUrl.StringValue.Length > 0)
+            {
 
+            }
+        }
 
     }
 }

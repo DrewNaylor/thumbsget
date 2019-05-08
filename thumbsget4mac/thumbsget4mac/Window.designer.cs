@@ -1,4 +1,4 @@
-﻿namespace test
+﻿namespace thumbsget4mac
 {
 
     // Should subclass MonoMac.AppKit.NSWindow
