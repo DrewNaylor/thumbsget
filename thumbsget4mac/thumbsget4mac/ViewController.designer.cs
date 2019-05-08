@@ -26,14 +26,14 @@ namespace thumbsget4mac
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (textboxVideoUrl != null) {
-				textboxVideoUrl.Dispose ();
-				textboxVideoUrl = null;
-			}
-
 			if (pictureboxPreview != null) {
 				pictureboxPreview.Dispose ();
 				pictureboxPreview = null;
+			}
+
+			if (textboxVideoUrl != null) {
+				textboxVideoUrl.Dispose ();
+				textboxVideoUrl = null;
 			}
 		}
 	}

@@ -153,13 +153,6 @@
                                                 <action selector="buttonViewThumbnailInBrowser:" target="XfG-lQ-9wD" id="tmg-4M-wFo"/>
                                             </connections>
                                         </button>
-                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-JP-N4J">
-                                            <rect key="frame" x="184" y="20" width="284" height="204"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="QdJ-JP-N4J" secondAttribute="height" multiplier="71:51" id="FLj-6B-CHw"/>
-                                            </constraints>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="sCv-go-IbQ"/>
-                                        </imageView>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-0k-1Zq">
                                             <rect key="frame" x="6" y="19" width="83" height="19"/>
                                             <constraints>
@@ -171,13 +164,18 @@
                                                 <font key="font" metaFont="cellTitle"/>
                                             </buttonCell>
                                         </button>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21k-Zs-WwO">
+                                            <rect key="frame" x="191" y="20" width="277" height="197"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="fgH-UX-3aw"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                             </box>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="pictureboxPreview" destination="QdJ-JP-N4J" id="tfv-iq-Cfh"/>
+                        <outlet property="pictureboxPreview" destination="21k-Zs-WwO" id="cTu-Ml-s7N"/>
                         <outlet property="textboxVideoUrl" destination="0lZ-zZ-F9U" id="FhD-cd-ONh"/>
                     </connections>
                 </viewController>
