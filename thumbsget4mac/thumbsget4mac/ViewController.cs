@@ -108,5 +108,4 @@ namespace thumbsget4mac
         }
         }
 
-    }
 }
