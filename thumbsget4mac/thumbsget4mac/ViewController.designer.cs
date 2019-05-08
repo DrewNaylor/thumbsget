@@ -9,21 +9,32 @@ using System.CodeDom.Compiler;
 
 namespace thumbsget4mac
 {
-    [Register ("ViewController")]
-    partial class ViewController
-    {
-        [Outlet]
-        AppKit.NSTextField textboxVideoUrl { get; set; }
+	[Register ("ViewController")]
+	partial class ViewController
+	{
+		[Outlet]
+		AppKit.NSImageView pictureboxPreview { get; set; }
 
-        [Action ("buttonViewThumbnailInBrowser:")]
-        partial void buttonViewThumbnailInBrowser (Foundation.NSObject sender);
-        
-        void ReleaseDesignerOutlets ()
-        {
-            if (textboxVideoUrl != null) {
-                textboxVideoUrl.Dispose ();
-                textboxVideoUrl = null;
-            }
-        }
-    }
+		[Outlet]
+		AppKit.NSTextField textboxVideoUrl { get; set; }
+
+		[Action ("buttonPreviewThumbnail:")]
+		partial void buttonPreviewThumbnail (Foundation.NSObject sender);
+
+		[Action ("buttonViewThumbnailInBrowser:")]
+		partial void buttonViewThumbnailInBrowser (Foundation.NSObject sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (textboxVideoUrl != null) {
+				textboxVideoUrl.Dispose ();
+				textboxVideoUrl = null;
+			}
+
+			if (pictureboxPreview != null) {
+				pictureboxPreview.Dispose ();
+				pictureboxPreview = null;
+			}
+		}
+	}
 }

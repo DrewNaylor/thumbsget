@@ -135,6 +135,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="buttonPreviewThumbnail:" target="XfG-lQ-9wD" id="Px3-kq-sVH"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-M4-2S8">
                                             <rect key="frame" x="0.0" y="189" width="189" height="32"/>
@@ -174,6 +177,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="pictureboxPreview" destination="QdJ-JP-N4J" id="tfv-iq-Cfh"/>
                         <outlet property="textboxVideoUrl" destination="0lZ-zZ-F9U" id="FhD-cd-ONh"/>
                     </connections>
                 </viewController>

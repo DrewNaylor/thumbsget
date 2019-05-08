@@ -20,6 +20,8 @@ namespace thumbsget4mac
 
         partial void buttonViewThumbnailInBrowser(NSObject sender)
         {
+            // Open the thumbnail in the user's default browser.
+
             // Make sure the textbox starts with http:// 
             // or https://.
             // The double bars (||) make it so that if the thing on the left is false,
