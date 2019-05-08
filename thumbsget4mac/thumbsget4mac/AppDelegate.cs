@@ -1,7 +1,7 @@
 ﻿using AppKit;
 using Foundation;
 
-namespace test
+namespace thumbsget4mac
 {
     [Register("AppDelegate")]
     public class AppDelegate : NSApplicationDelegate

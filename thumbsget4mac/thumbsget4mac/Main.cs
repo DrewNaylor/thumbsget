@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace test
+namespace thumbsget4mac
 {
     static class MainClass
     {

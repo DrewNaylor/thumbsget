@@ -4,7 +4,7 @@ using System.Linq;
 using Foundation;
 using AppKit;
 
-namespace test
+namespace thumbsget4mac
 {
     public partial class Window : AppKit.NSWindow
     {

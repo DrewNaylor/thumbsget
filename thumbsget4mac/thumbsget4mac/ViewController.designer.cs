@@ -7,7 +7,7 @@
 using Foundation;
 using System.CodeDom.Compiler;
 
-namespace test
+namespace thumbsget4mac
 {
     [Register ("ViewController")]
     partial class ViewController

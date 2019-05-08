@@ -3,7 +3,7 @@
 using AppKit;
 using Foundation;
 
-namespace test
+namespace thumbsget4mac
 {
     public partial class ViewController : NSViewController
     {
@@ -20,7 +20,9 @@ namespace test
 
         partial void buttonViewThumbnailInBrowser (NSObject sender)
         {
-            System.Diagnostics.Process.Start(textboxVideoUrl.StringValue);
+            // Get the thumbnail URL open in the browser.
+            if (textboxVideoUrl.StringValue.Length > 0)
+            {}
         }
 
         public override NSObject RepresentedObject
@@ -35,5 +37,8 @@ namespace test
                 // Update the view, if already loaded.
             }
         }
+
+
+
     }
 }
