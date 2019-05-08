@@ -4,7 +4,7 @@ This is a port of thumbsget to a webpage that uses JavaScript to show the thumbn
 
 For now, it won't look very good until some CSS styling is done.
 
-At some point, this will probably be installed on my website so that people can use it without having to download the HTML file first.
+thumbsget4web is installed on my website and you can use it here: https://drew-naylor.com/projects/thumbsget4web/thumbsget4web.html
 
 ## Limitations
 
