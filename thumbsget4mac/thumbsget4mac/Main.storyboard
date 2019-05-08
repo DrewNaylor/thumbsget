@@ -173,6 +173,9 @@
                             </box>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="textboxVideoUrl" destination="0lZ-zZ-F9U" id="FhD-cd-ONh"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

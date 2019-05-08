@@ -12,11 +12,18 @@ namespace test
     [Register ("ViewController")]
     partial class ViewController
     {
+        [Outlet]
+        AppKit.NSTextField textboxVideoUrl { get; set; }
+
         [Action ("buttonViewThumbnailInBrowser:")]
         partial void buttonViewThumbnailInBrowser (Foundation.NSObject sender);
         
         void ReleaseDesignerOutlets ()
         {
+            if (textboxVideoUrl != null) {
+                textboxVideoUrl.Dispose ();
+                textboxVideoUrl = null;
+            }
         }
     }
 }
