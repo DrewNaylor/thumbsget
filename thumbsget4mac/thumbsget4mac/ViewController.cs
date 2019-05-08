@@ -33,6 +33,17 @@ namespace thumbsget4mac
             Process.Start(getThumbnailUrl());
         }
 
+        partial void buttonPreviewThumbnail(NSObject sender)
+        {
+            // Loads the video in the video URL bar's thumbnail
+            // into the preview image box on the right side.
+
+            using (NSUrl imageUrl = getThumbnailUrl())
+            {
+                pictureboxPreview.Image;
+            }
+        }
+
         public override NSObject RepresentedObject
         {
             get
