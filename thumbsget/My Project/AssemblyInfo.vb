@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("thumbsget")>
-<Assembly: AssemblyCopyright("Copyright © 2018 Drew Naylor. Licensed under the Gnu GPL v3+.")>
+<Assembly: AssemblyCopyright("Copyright © 2018-2019 Drew Naylor. Licensed under the Gnu GPL v3+.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

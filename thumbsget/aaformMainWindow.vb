@@ -1,6 +1,6 @@
 ﻿'thumbsget - Gets the maxresdefault thumbnail for YouTube videos from
 'original video URL. Not associated With YouTube or Google/Alphabet.
-'Copyright (C) 2018 Drew Naylor
+'Copyright (C) 2018-2019 Drew Naylor
 'YouTube and all related words are copyright
 'and trademark Google/Alphabet. Explained more in About window.
 'Google/Alphabet is not affiliated with either the thumbsget project or Drew Naylor
@@ -99,18 +99,27 @@ Public Class aaformMainWindow
             Dim thumbnailUrl As String = textboxVideoUrl.Text
             Debug.WriteLine("Start:")
             Debug.WriteLine("Current URL: " & thumbnailUrl)
+
             ' Replace "www." with nothing.
             thumbnailUrl = thumbnailUrl.Replace("www.", "")
             Debug.WriteLine("Replace www. Current URL: " & thumbnailUrl)
+
             ' Replace "m." with nothing.
             thumbnailUrl = thumbnailUrl.Replace("m.", "")
             Debug.WriteLine("Replace m. Current URL: " & thumbnailUrl)
+
             ' Replace "?feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("?feature=youtu.be", "")
             Debug.WriteLine("Replace ?feature=youtu.be. Current URL: " & thumbnailUrl)
+
             ' Replace "&feature=youtu.be" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("&feature=youtu.be", "")
             Debug.WriteLine("Replace &feature=youtu.be. Current URL: " & thumbnailUrl)
+
+            ' Replace "&feature=share" with nothing.
+            thumbnailUrl = thumbnailUrl.Replace("&feature=share", "")
+            Debug.WriteLine("Replace &feature=share. Current URL: " & thumbnailUrl)
+
             ' Now, if "youtube.com/watch?" is in the URL, replace it and "v=" with "i.ytimg.com/vi/".
             If thumbnailUrl.Contains("youtube.com/watch?") Then
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/watch?v=", "i.ytimg.com/vi/")
@@ -120,12 +129,15 @@ Public Class aaformMainWindow
                 thumbnailUrl = thumbnailUrl.Replace("youtu.be/", "i.ytimg.com/vi/")
                 Debug.WriteLine("Replace youtu.be. Current URL: " & thumbnailUrl)
             End If
+
             ' Replace "watch" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("watch", "")
             Debug.WriteLine("Replace watch. Current URL: " & thumbnailUrl)
+
             ' Replace "&v=" with nothing.
             thumbnailUrl = thumbnailUrl.Replace("&v=", "")
             Debug.WriteLine("Replace &v=. Current URL: " & thumbnailUrl)
+
             ' Once again, replace "youtube.com/" with "i.ytimg.com/vi/".
             thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/")
             Debug.WriteLine("Replace youtube.com/. Current URL: " & thumbnailUrl)

@@ -11,7 +11,7 @@ License notice:
 ```
 thumbsget - Gets the maxresdefault thumbnail for YouTube videos from
 original video URL. Not associated With YouTube or Google/Alphabet.
-Copyright (C) 2018 Drew Naylor
+Copyright (C) 2018-2019 Drew Naylor
 YouTube and all related words are copyright
 and trademark Google/Alphabet. Explained more in About window.
 Google/Alphabet is not affiliated with either the thumbsget project or Drew Naylor
@@ -40,6 +40,7 @@ Currently, thumbsget replaces the following things in a URL:
 - "m." with nothing
 - "?feature=youtu.be" with nothing
 - "&feature=youtu.be" with nothing
+- "&feature=share" with nothing
 - "youtube.com/watch?v=" with "i.ytimg.com/vi/"
 - "youtu.be/" with "i.ytimg.com/vi/"
 - "watch" with nothing
