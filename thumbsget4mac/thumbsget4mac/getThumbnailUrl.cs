@@ -3,8 +3,9 @@ namespace thumbsget4mac
 {
     public class getThumbnailUrl
     {
-        public getThumbnailUrl()
+        public string getThumbnailUrl(thumbnailUrl])
         {
+            // We need to get the thumbnail's URL.
         }
     }
 }
