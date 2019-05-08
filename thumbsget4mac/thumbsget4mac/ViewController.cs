@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using AppKit;
 using Foundation;
+using ImageIO;
 
 namespace thumbsget4mac
 {
@@ -38,8 +39,9 @@ namespace thumbsget4mac
             // Loads the video in the video URL bar's thumbnail
             // into the preview image box on the right side.
 
-            pictureboxPreview.Image = NSImage.ImageNamed(getThumbnailUrl());
-            
+            NSUrl imageUrl = new NSUrl(getThumbnailUrl());
+            NSImage image = new NSImage(imageUrl);
+            pictureboxPreview.Image = image;
         }
 
         public override NSObject RepresentedObject
