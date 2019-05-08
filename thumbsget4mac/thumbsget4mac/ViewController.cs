@@ -18,6 +18,11 @@ namespace test
             // Do any additional setup after loading the view.
         }
 
+        partial void buttonViewThumbnailInBrowser (NSObject sender)
+        {
+            System.Diagnostics.Process.Start(textboxVideoUrl.StringValue);
+        }
+
         public override NSObject RepresentedObject
         {
             get
