@@ -103,7 +103,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lZ-zZ-F9U">
-                                            <rect key="frame" x="6" y="225" width="462" height="22"/>
+                                            <rect key="frame" x="10" y="212" width="462" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="462" id="5HS-7n-mhX"/>
                                                 <constraint firstAttribute="height" constant="22" id="jox-8e-UpJ"/>
@@ -115,7 +115,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-d8-kY8">
-                                            <rect key="frame" x="0.0" y="162" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="149" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="N7N-hL-ORJ"/>
                                                 <constraint firstAttribute="width" constant="177" id="ruY-95-i3c"/>
@@ -126,7 +126,7 @@
                                             </buttonCell>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwE-vd-Ukr">
-                                            <rect key="frame" x="0.0" y="135" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="122" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="177" id="fcd-cP-OBJ"/>
                                                 <constraint firstAttribute="height" constant="21" id="uUH-6u-QRS"/>
@@ -140,7 +140,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-M4-2S8">
-                                            <rect key="frame" x="0.0" y="189" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="176" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="177" id="FyX-0L-QPz"/>
                                                 <constraint firstAttribute="height" constant="21" id="iUi-WA-wSW"/>
@@ -154,7 +154,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-0k-1Zq">
-                                            <rect key="frame" x="6" y="19" width="83" height="19"/>
+                                            <rect key="frame" x="10" y="8" width="83" height="19"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="N73-hb-ao2"/>
                                                 <constraint firstAttribute="width" constant="83" id="gum-hA-Ctg"/>
@@ -165,9 +165,9 @@
                                             </buttonCell>
                                         </button>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21k-Zs-WwO">
-                                            <rect key="frame" x="191" y="20" width="277" height="197"/>
+                                            <rect key="frame" x="195" y="66" width="277" height="141"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="fgH-UX-3aw"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="groove" id="fgH-UX-3aw"/>
                                         </imageView>
                                     </subviews>
                                 </view>
