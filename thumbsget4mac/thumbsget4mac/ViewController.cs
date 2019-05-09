@@ -44,6 +44,18 @@ namespace thumbsget4mac
             pictureboxPreview.Image = thumbnailPreview;
         }
 
+        partial void buttonSaveThumbnail(NSObject sender)
+        {
+            // Saves the thumbnail to the folder the user chooses.
+            // This uses a regular dialog rather than a sheet since
+            // sheets don't really make sense and get in the way.
+
+            // First, create a new save dialog.
+            var savefiledialogSaveThumbnail = new NSSavePanel();
+            savefiledialogSaveThumbnail.Title = "Save thumbnail";
+
+        }
+
         public override NSObject RepresentedObject
         {
             get
