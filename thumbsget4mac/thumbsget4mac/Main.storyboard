@@ -115,7 +115,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-d8-kY8">
-                                            <rect key="frame" x="4" y="149" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="122" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="N7N-hL-ORJ"/>
                                                 <constraint firstAttribute="width" constant="177" id="ruY-95-i3c"/>
@@ -124,20 +124,6 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwE-vd-Ukr">
-                                            <rect key="frame" x="4" y="122" width="189" height="32"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="177" id="fcd-cP-OBJ"/>
-                                                <constraint firstAttribute="height" constant="21" id="uUH-6u-QRS"/>
-                                            </constraints>
-                                            <buttonCell key="cell" type="push" title="Preview thumbnail" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xhb-Gr-xc6">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                            <connections>
-                                                <action selector="buttonPreviewThumbnail:" target="XfG-lQ-9wD" id="Px3-kq-sVH"/>
-                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-M4-2S8">
                                             <rect key="frame" x="4" y="176" width="189" height="32"/>
@@ -169,6 +155,29 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="groove" id="fgH-UX-3aw"/>
                                         </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-KR-r4u">
+                                            <rect key="frame" x="15" y="237" width="72" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Video URL:" id="jtP-ID-Ppx">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwE-vd-Ukr">
+                                            <rect key="frame" x="4" y="149" width="189" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="177" id="fcd-cP-OBJ"/>
+                                                <constraint firstAttribute="height" constant="21" id="uUH-6u-QRS"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="push" title="Preview thumbnail" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xhb-Gr-xc6">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="buttonPreviewThumbnail:" target="XfG-lQ-9wD" id="Px3-kq-sVH"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                             </box>
