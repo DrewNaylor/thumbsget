@@ -8,6 +8,8 @@ It requires at least macOS 10.13 High Sierra, and is being developed using Visua
 
 Please be aware that it may use more memory and storage than the Windows version due to using Mono, .Net, Xamarin.Mac, and other related stuff, and having those things be either compiled or linked into the binary.
 
+This version also seems to have issues where you can't re-open the window if you close the main window without first "quitting" it from the dock first.
+
 
 To open this project in Visual Studio, please use `./thumbsget4mac/thumbsget4mac.sln` 
 
