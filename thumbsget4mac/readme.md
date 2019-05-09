@@ -2,7 +2,7 @@
 
 This is an official port of thumbsget to macOS using Visual Studio for Mac's Cocoa C# template.
 
-So far, everything except for saving thumbnails and showing the About window is implemented.
+It's very similar to thumbsget, except that the About window is shown using the one in the macOS menu bar instead of a button on the form. As of May 8, 2019, it has feature parity with the Windows version of thumbsget.
 
 It requires at least macOS 10.13 High Sierra, and is being developed using Visual Studio Community 2019 for Mac along with Xcode 10.1. Previous versions of Xcode can be downloaded from the "other downloads" section on the Apple developer website, and they didn't seem to require payment.
 
