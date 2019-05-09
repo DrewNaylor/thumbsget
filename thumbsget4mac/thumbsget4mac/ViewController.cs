@@ -51,8 +51,9 @@ namespace thumbsget4mac
             // sheets don't really make sense and get in the way.
 
             // First, create a new save dialog.
-            var savefiledialogSaveThumbnail = new NSSavePanel();
+            NSSavePanel savefiledialogSaveThumbnail = new NSSavePanel();
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
+            savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png" };
 
         }
 
