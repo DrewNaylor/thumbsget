@@ -55,10 +55,13 @@ namespace thumbsget4mac
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
             savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
 
+
             //  Now open the save dialog.
             if (savefiledialogSaveThumbnail.RunModal () == 1)
             {
-                var alert = new NSAlert
+                // Get the file.
+                System.Net.WebClient thumbnailDownloader = new System.Net.WebClient();
+                thumbnailDownloader.DownloadFile(getThumbnailUrl(), savefiledialogSaveThumbnail.Filename);
             }
         }
 
