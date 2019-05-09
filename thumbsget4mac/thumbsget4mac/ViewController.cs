@@ -51,6 +51,8 @@ namespace thumbsget4mac
             // sheets don't really make sense and get in the way.
 
             // First, create a new save dialog.
+            // Code to create the save dialog was based on this:
+            // https://docs.microsoft.com/en-us/xamarin/mac/user-interface/dialog#the-save-dialog
             NSSavePanel savefiledialogSaveThumbnail = new NSSavePanel();
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
             savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
