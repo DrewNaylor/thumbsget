@@ -21,6 +21,9 @@ namespace thumbsget4mac
 		[Action ("buttonPreviewThumbnail:")]
 		partial void buttonPreviewThumbnail (Foundation.NSObject sender);
 
+		[Action ("buttonSaveThumbnail:")]
+		partial void buttonSaveThumbnail (Foundation.NSObject sender);
+
 		[Action ("buttonViewThumbnailInBrowser:")]
 		partial void buttonViewThumbnailInBrowser (Foundation.NSObject sender);
 		

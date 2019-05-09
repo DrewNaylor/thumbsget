@@ -124,6 +124,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="buttonSaveThumbnail:" target="XfG-lQ-9wD" id="jSv-gs-P9P"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-M4-2S8">
                                             <rect key="frame" x="4" y="176" width="189" height="32"/>
