@@ -56,7 +56,7 @@ namespace thumbsget4mac
             NSSavePanel savefiledialogSaveThumbnail = new NSSavePanel();
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
             savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
-
+            savefiledialogSaveThumbnail.NameFieldStringValue = "maxresdefault.jpg";
 
             //  Now open the save dialog.
             if (savefiledialogSaveThumbnail.RunModal () == 1)
