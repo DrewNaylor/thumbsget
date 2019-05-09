@@ -80,7 +80,7 @@ Public Class aaformMainWindow
                 vbCrLf &
                 "Copyright notice: YouTube and all related words and" & vbCrLf &
                 "trademarks/registered trademarks owned by Google/Alphabet in the United States" & vbCrLf &
-                "and/or other countries are Copyright 2018 Google/Alphabet. All" & vbCrLf &
+                "and/or other countries are Copyright Google/Alphabet. All" & vbCrLf &
                 "Rights Reserved to Google/Alphabet for Google/Alphabet's copyrights, trademarks," & vbCrLf &
                 "and registered trademarks." & vbCrLf &
                 vbCrLf &
