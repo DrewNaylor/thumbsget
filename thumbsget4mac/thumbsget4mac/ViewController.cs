@@ -53,8 +53,13 @@ namespace thumbsget4mac
             // First, create a new save dialog.
             NSSavePanel savefiledialogSaveThumbnail = new NSSavePanel();
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
-            savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png" };
+            savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
 
+            //  Now open the save dialog.
+            if (savefiledialogSaveThumbnail.RunModal () == 1)
+            {
+                var alert = new NSAlert
+            }
         }
 
         public override NSObject RepresentedObject
