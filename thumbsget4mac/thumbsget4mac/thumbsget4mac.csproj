@@ -88,5 +88,8 @@
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Window.xib" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Credits.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

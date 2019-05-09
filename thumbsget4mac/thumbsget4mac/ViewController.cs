@@ -67,6 +67,7 @@ namespace thumbsget4mac
             }
         }
 
+
         public override NSObject RepresentedObject
         {
             get

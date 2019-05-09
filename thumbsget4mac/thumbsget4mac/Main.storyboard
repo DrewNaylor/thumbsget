@@ -73,7 +73,7 @@
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="thumbsget4mac" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="525" height="204"/>
+                        <rect key="contentRect" x="196" y="240" width="525" height="186"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="GxN-1k-shM"/>
@@ -85,25 +85,25 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="74.5" y="241"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="252"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="208"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box fixedFrame="YES" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="d3x-GX-Xs5">
-                                <rect key="frame" x="-3" y="-4" width="486" height="258"/>
+                                <rect key="frame" x="-3" y="-48" width="486" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" ambiguous="YES" id="DlU-5J-CZ4">
                                     <rect key="frame" x="2" y="2" width="482" height="254"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lZ-zZ-F9U">
-                                            <rect key="frame" x="10" y="212" width="462" height="22"/>
+                                            <rect key="frame" x="10" y="203" width="462" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="462" id="5HS-7n-mhX"/>
                                                 <constraint firstAttribute="height" constant="22" id="jox-8e-UpJ"/>
@@ -115,7 +115,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-d8-kY8">
-                                            <rect key="frame" x="4" y="122" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="113" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="N7N-hL-ORJ"/>
                                                 <constraint firstAttribute="width" constant="177" id="ruY-95-i3c"/>
@@ -129,7 +129,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4Z-M4-2S8">
-                                            <rect key="frame" x="4" y="176" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="167" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="177" id="FyX-0L-QPz"/>
                                                 <constraint firstAttribute="height" constant="21" id="iUi-WA-wSW"/>
@@ -142,33 +142,13 @@
                                                 <action selector="buttonViewThumbnailInBrowser:" target="XfG-lQ-9wD" id="tmg-4M-wFo"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-0k-1Zq">
-                                            <rect key="frame" x="10" y="8" width="83" height="19"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="18" id="N73-hb-ao2"/>
-                                                <constraint firstAttribute="width" constant="83" id="gum-hA-Ctg"/>
-                                            </constraints>
-                                            <buttonCell key="cell" type="roundRect" title="About" bezelStyle="roundedRect" alignment="center" borderStyle="border" inset="2" id="Adf-ph-NYO">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="cellTitle"/>
-                                            </buttonCell>
-                                        </button>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21k-Zs-WwO">
-                                            <rect key="frame" x="195" y="66" width="277" height="141"/>
+                                            <rect key="frame" x="195" y="57" width="277" height="141"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="groove" id="fgH-UX-3aw"/>
                                         </imageView>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-KR-r4u">
-                                            <rect key="frame" x="15" y="237" width="72" height="17"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Video URL:" id="jtP-ID-Ppx">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwE-vd-Ukr">
-                                            <rect key="frame" x="4" y="149" width="189" height="32"/>
+                                            <rect key="frame" x="4" y="140" width="189" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="177" id="fcd-cP-OBJ"/>
                                                 <constraint firstAttribute="height" constant="21" id="uUH-6u-QRS"/>
@@ -181,6 +161,15 @@
                                                 <action selector="buttonPreviewThumbnail:" target="XfG-lQ-9wD" id="Px3-kq-sVH"/>
                                             </connections>
                                         </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-KR-r4u">
+                                            <rect key="frame" x="16" y="228" width="72" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Video URL:" id="jtP-ID-Ppx">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </box>
@@ -193,7 +182,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="646"/>
+            <point key="canvasLocation" x="75" y="624"/>
         </scene>
     </scenes>
 </document>
