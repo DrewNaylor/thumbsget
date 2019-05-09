@@ -6,7 +6,7 @@ It's very similar to thumbsget, except that the About window is shown using the 
 
 It requires at least macOS 10.13 High Sierra, and is being developed using Visual Studio Community 2019 for Mac along with Xcode 10.1. Previous versions of Xcode can be downloaded from the "other downloads" section on the Apple developer website, and they didn't seem to require payment.
 
-Please be aware that it may use more memory and storage than the Windows version due to using Mono, .Net, Xamarin.Mac, and other related stuff.
+Please be aware that it may use more memory and storage than the Windows version due to using Mono, .Net, Xamarin.Mac, and other related stuff, and having those things be either compiled or linked into the binary.
 
 
 To open this project in Visual Studio, please use `./thumbsget4mac/thumbsget4mac.sln` 
