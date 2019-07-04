@@ -88,8 +88,16 @@
                 thumbnailUrl = thumbnailUrl.replace("youtube.com/", "i.ytimg.com/vi/");
                 console.info("Replace youtube.com/. Current URL: " + thumbnailUrl);
 
-                // Add "maxresdefault.jpg" to end of URL.
-                thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg"
+                // Add "hqdefault.jpg" to end of URL if the
+                // checkbox to use hqdefault instead is checked.
+                if(checkboxUseHQDefault.checked == 1) {
+                    thumbnailUrl = thumbnailUrl + "/hqdefault.jpg";
+                } else {
+                    // Otherwise, if the checkbox is unchecked,
+                    // use maxresdefault.
+                    thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg";
+                }
+                
                 console.info("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
 
                 // Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
@@ -152,7 +160,7 @@
     <br>
     <input type="button" onclick="previewThumbnail()" value="Preview thumbnail">
     <br>
-    <input type="checkbox" id="useHQDefault" unchecked><label for="useHQDefault">Use hqdefault instead of maxresdefault <br>(try if the thumbnail won't show up)</label></input>
+    <input type="checkbox" id="checkboxUseHQDefault" unchecked> <label for="checkboxUseHQDefault">Use hqdefault instead of maxresdefault <br>(try if the thumbnail won't show up)</label></input>
    </form>
     <br>
    <img id="thumbnailImageBox" height="240" src="">
