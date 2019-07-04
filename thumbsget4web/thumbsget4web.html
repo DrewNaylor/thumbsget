@@ -25,8 +25,9 @@
             // This is used to open the thumbnail in a new tab.
             // We can't download the image directly since most
             // browsers block cross-domain download requests.
+            if (video_url.value != ""){
             window.open(getThumbnailUrl(), '_blank');
-
+            }
         }
 
         function getThumbnailUrl() {
@@ -92,13 +93,13 @@
                 // checkbox to use hqdefault instead is checked.
                 if(checkboxUseHQDefault.checked == 1) {
                     thumbnailUrl = thumbnailUrl + "/hqdefault.jpg";
+                    console.info("Append /hqdefault.jpg. Current URL: " + thumbnailUrl);
                 } else {
                     // Otherwise, if the checkbox is unchecked,
                     // use maxresdefault.
                     thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg";
+                    console.info("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
                 }
-                
-                console.info("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
 
                 // Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
                 return thumbnailUrl
