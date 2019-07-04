@@ -6,6 +6,10 @@ After getting the thumbnail URL, it'll open in the default browser. As of Novemb
 - Ports available:
   - macOS: [thumbsget4mac](./thumbsget4mac/)
   - Webpage/HTML/webapp/whatever: [thumbsget4web](./thumbsget4web/)
+  
+As of July 4, 2019, thumbsget4web allows loading the hqdefault thumbnail instead of the maxresdefault thumbnail, in case there's no maxresdefault. This feature isn't yet available in the Windows or Mac versions.
+
+The Windows version of thumbsget is supported under Linux if .Net 4.6.1 is installed, which can be done through winetricks.  Doesn't look the best, though.
 
 Project build status: [![Build status](https://ci.appveyor.com/api/projects/status/7ojww314fwhcyyhd?svg=true)](https://ci.appveyor.com/project/DrewNaylor/thumbsget)
 
@@ -68,6 +72,7 @@ To run thumbsget, your computer requires the following:
 - [Microsoft .Net 4.6.1 Framework](https://www.microsoft.com/en-us/download/details.aspx?id=49981)
 
   - Ignore the ad on that page, scroll down, and click the orange Download button. Note that this is the web installer and it'll download its components after it's opened. May take a while to download.
+  - If on Linux, you can install this through winetricks with Wine 4.0 if I remember correctly. Should work, but it's been a while since it was last tested.
 
 - Windows versions: Windows 7 SP1, 8.1, 10.
   - Windows 8.0 is untested although it might work.
