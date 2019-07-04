@@ -25,4 +25,4 @@ thumbsget4web has a limitation where it can't actually save thumbnails directly 
 - Changed:
   - The noscript tag has been updated to mention that there's a Mac version of thumbsget and that the Windows version can be run on Linux with .Net 4.6.1 installed, which can be done with winetricks.
 - Fixed:
-  - Clicking "View thumbnail in new tab" works in thumbsget4web even if the textbox is blank. This shouldn't happen so that it's consistent with the desktop versions. (Fixed in c55f9dd. See #4 for more details.)
+  - Clicking "View thumbnail in new tab" works in thumbsget4web even if the textbox is blank. This shouldn't happen so that it's consistent with the desktop versions. (Fixed in c55f9dd. See [#4](https://github.com/DrewNaylor/thumbsget/issues/4) for more details.)
