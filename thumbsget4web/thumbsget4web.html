@@ -142,13 +142,17 @@
         }
         </script>
 
+    
+    <!-- Actual thumbsget4web interface starts here: -->
    <form>
     <label for:"video_url">Video URL:</label> <input type="text" id="video_url">
     <br>
     <br>
     <input type="button" onclick="saveThumbnail()" value="View thumbnail in new tab">
     <br>
-    <input type="button" onclick="previewThumbnail()" value="Preview thumbnail"> 
+    <input type="button" onclick="previewThumbnail()" value="Preview thumbnail">
+    <br>
+    <input type="checkbox" id="useHQDefault" unchecked><label for="useHQDefault">Use hqdefault instead of maxresdefault <br>(try if the thumbnail won't show up)</label></input>
    </form>
     <br>
    <img id="thumbnailImageBox" height="240" src="">
@@ -161,7 +165,7 @@
     <noscript><p>JavaScript is required to use thumbsget4web. <br> If you don't want to enable JavaScript, 
     you can <a href="https://github.com/DrewNaylor/thumbsget/" target="_blank">use the desktop version
     of thumbsget</a> instead. <br>
-    Please note that the desktop version only officially runs on Windows at the current time.</p>
+    There are versions of thumbsget for both Windows and macOS. thumbsget for Windows can also be run on Linux if .Net 4.6.1 is installed, which can be done through winetricks after installing Wine.</p>
     </noscript>
 </body>
 </html>
