@@ -1,3 +1,9 @@
 label {
-	font-family: 'Open Sans',Arial,sans-serif;
+	font-family: Arial,sans-serif;
+	font-size: 12.5px
+}
+
+input {
+	font-family: Arial,sans-serif;
+	font-size: 12.5px
 }
