@@ -142,9 +142,20 @@ Public Class aaformMainWindow
             thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/")
             Debug.WriteLine("Replace youtube.com/. Current URL: " & thumbnailUrl)
 
-            ' Add "maxresdefault.jpg" to end of URL.
-            thumbnailUrl = thumbnailUrl & "/maxresdefault.jpg"
-            Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
+            ' Add "maxresdefault.jpg" to end of URL if the checkbox
+            ' to use hqdefault instead is unchecked.
+            If checkboxUseHQDefault.Checked = False Then
+                thumbnailUrl = thumbnailUrl & "/maxresdefault.jpg"
+                Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " & thumbnailUrl)
+
+                ' Otherwise, if the checkbox is checked, add "hqdefault" to the
+                ' end of the URL.
+            ElseIf checkboxUseHQDefault.Checked = True Then
+                thumbnailUrl = thumbnailUrl & "/hqdefault.jpg"
+                Debug.WriteLine("Append /hqdefault.jpg. Current URL: " & thumbnailUrl)
+            End If
+
+
 
             ' Return the thumbnail URL if the textbox isn't empty and onlyReturnVideoID
             ' is = False.
