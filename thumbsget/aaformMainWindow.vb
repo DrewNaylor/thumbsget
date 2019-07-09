@@ -44,7 +44,14 @@ Public Class aaformMainWindow
         ' I got some of this code from https://docs.microsoft.com/en-us/dotnet/api/system.net.webclient.downloadfile?view=netframework-4.6.1#System_Net_WebClient_DownloadFile_System_String_System_String_
 
         ' Set filename for save file dialog.
-        savefiledialogSaveThumbnail.FileName = "maxresdefault.jpg"
+        ' Varies based on whether the checkbox to use
+        ' hqdefault is checked or not.
+        If checkboxUseHQDefault.Checked = True Then
+            savefiledialogSaveThumbnail.FileName = "hqdefault.jpg"
+        Else
+            savefiledialogSaveThumbnail.FileName = "maxresdefault.jpg"
+        End If
+
 
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
             ' If the user clicks "Ok", save the file using a new WebClient.
