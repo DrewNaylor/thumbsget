@@ -18,6 +18,11 @@ thumbsget4web has a limitation where it can't actually save thumbnails directly 
 
 ## Recent updates
 
+### Version 0.1.2.0 - July 9, 2019:
+
+- Fixed:
+  - On mobile/small screen devices, the UI will now be properly sized so that you don't have to zoom in to use it easier. Desktop/large screen devices don't seem to have much of a difference.
+
 ### Version 0.1.1.0 - July 4, 2019:
 
 - Added:
