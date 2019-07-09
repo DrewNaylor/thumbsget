@@ -1,13 +1,13 @@
 # thumbsget
-Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.
+Gets the maxres or hq thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.
 
-After getting the thumbnail URL, it'll open in the default browser. As of November 23, 2018, you can also preview and save the thumbnail directly from the main thumbsget window.
+After getting the thumbnail URL, it'll open in the default browser. You can also preview and save the thumbnail directly from the main thumbsget window, if you wish.
 
 - Ports available:
   - macOS: [thumbsget4mac](./thumbsget4mac/)
   - Webpage/HTML/webapp/whatever: [thumbsget4web](./thumbsget4web/)
   
-As of July 4, 2019, thumbsget4web allows loading the hqdefault thumbnail instead of the maxresdefault thumbnail, in case there's no maxresdefault. This feature isn't yet available in the Windows or Mac versions.
+As of July 4, 2019, thumbsget4web allows loading the hqdefault thumbnail instead of the maxresdefault thumbnail, in case there's no maxresdefault version. The Windows version also has this feature as of July 9, 2019, but the Mac version still doesn't have it yet.
 
 The Windows version of thumbsget is supported under Linux if .Net 4.6.1 is installed, which can be done through winetricks.  Doesn't look the best, though.
 
@@ -17,8 +17,9 @@ Master branch build status: [![Build status](https://ci.appveyor.com/api/project
 
 License notice:
 ```
-thumbsget - Gets the maxresdefault thumbnail for YouTube videos from
-original video URL. Not associated With YouTube or Google/Alphabet.
+thumbsget - Gets the maxres or hq thumbnail for YouTube videos from
+original video URL. Not associated with YouTube or Google/Alphabet.
+
 Copyright (C) 2018-2019 Drew Naylor
 YouTube and all related words are copyright
 and trademark Google/Alphabet. Explained more in About window.
