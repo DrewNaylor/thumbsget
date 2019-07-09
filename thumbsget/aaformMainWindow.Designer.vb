@@ -22,16 +22,19 @@ Partial Class aaformMainWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.panelUrlAndButton = New System.Windows.Forms.Panel()
+        Me.buttonSaveThumbnail = New System.Windows.Forms.Button()
+        Me.buttonPreviewThumbnail = New System.Windows.Forms.Button()
+        Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
         Me.buttonGetThumbnailInBrowser = New System.Windows.Forms.Button()
         Me.labelVideoUrl = New System.Windows.Forms.Label()
         Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
-        Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
-        Me.buttonPreviewThumbnail = New System.Windows.Forms.Button()
-        Me.buttonSaveThumbnail = New System.Windows.Forms.Button()
         Me.savefiledialogSaveThumbnail = New System.Windows.Forms.SaveFileDialog()
+        Me.checkboxUseHQDefault = New System.Windows.Forms.CheckBox()
+        Me.tooltipCheckboxHQDefault = New System.Windows.Forms.ToolTip(Me.components)
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,6 +58,7 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelUrlAndButton.Controls.Add(Me.checkboxUseHQDefault)
         Me.panelUrlAndButton.Controls.Add(Me.buttonSaveThumbnail)
         Me.panelUrlAndButton.Controls.Add(Me.buttonPreviewThumbnail)
         Me.panelUrlAndButton.Controls.Add(Me.pictureboxPreview)
@@ -66,11 +70,39 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 178)
         Me.panelUrlAndButton.TabIndex = 0
         '
+        'buttonSaveThumbnail
+        '
+        Me.buttonSaveThumbnail.Location = New System.Drawing.Point(8, 120)
+        Me.buttonSaveThumbnail.Name = "buttonSaveThumbnail"
+        Me.buttonSaveThumbnail.Size = New System.Drawing.Size(209, 29)
+        Me.buttonSaveThumbnail.TabIndex = 5
+        Me.buttonSaveThumbnail.Text = "Save thumbnail"
+        Me.buttonSaveThumbnail.UseVisualStyleBackColor = True
+        '
+        'buttonPreviewThumbnail
+        '
+        Me.buttonPreviewThumbnail.Location = New System.Drawing.Point(8, 85)
+        Me.buttonPreviewThumbnail.Name = "buttonPreviewThumbnail"
+        Me.buttonPreviewThumbnail.Size = New System.Drawing.Size(209, 29)
+        Me.buttonPreviewThumbnail.TabIndex = 4
+        Me.buttonPreviewThumbnail.Text = "Preview thumbnail"
+        Me.buttonPreviewThumbnail.UseVisualStyleBackColor = True
+        '
+        'pictureboxPreview
+        '
+        Me.pictureboxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pictureboxPreview.Location = New System.Drawing.Point(223, 50)
+        Me.pictureboxPreview.Name = "pictureboxPreview"
+        Me.pictureboxPreview.Size = New System.Drawing.Size(286, 123)
+        Me.pictureboxPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pictureboxPreview.TabIndex = 3
+        Me.pictureboxPreview.TabStop = False
+        '
         'buttonGetThumbnailInBrowser
         '
         Me.buttonGetThumbnailInBrowser.Location = New System.Drawing.Point(8, 50)
         Me.buttonGetThumbnailInBrowser.Name = "buttonGetThumbnailInBrowser"
-        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(158, 29)
+        Me.buttonGetThumbnailInBrowser.Size = New System.Drawing.Size(209, 29)
         Me.buttonGetThumbnailInBrowser.TabIndex = 2
         Me.buttonGetThumbnailInBrowser.Text = "View thumbnail in browser"
         Me.buttonGetThumbnailInBrowser.UseVisualStyleBackColor = True
@@ -103,40 +135,23 @@ Partial Class aaformMainWindow
         Me.linklabelAbout.TabStop = True
         Me.linklabelAbout.Text = "About"
         '
-        'pictureboxPreview
-        '
-        Me.pictureboxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pictureboxPreview.Location = New System.Drawing.Point(172, 50)
-        Me.pictureboxPreview.Name = "pictureboxPreview"
-        Me.pictureboxPreview.Size = New System.Drawing.Size(337, 123)
-        Me.pictureboxPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pictureboxPreview.TabIndex = 3
-        Me.pictureboxPreview.TabStop = False
-        '
-        'buttonPreviewThumbnail
-        '
-        Me.buttonPreviewThumbnail.Location = New System.Drawing.Point(8, 85)
-        Me.buttonPreviewThumbnail.Name = "buttonPreviewThumbnail"
-        Me.buttonPreviewThumbnail.Size = New System.Drawing.Size(158, 29)
-        Me.buttonPreviewThumbnail.TabIndex = 4
-        Me.buttonPreviewThumbnail.Text = "Preview thumbnail"
-        Me.buttonPreviewThumbnail.UseVisualStyleBackColor = True
-        '
-        'buttonSaveThumbnail
-        '
-        Me.buttonSaveThumbnail.Location = New System.Drawing.Point(8, 120)
-        Me.buttonSaveThumbnail.Name = "buttonSaveThumbnail"
-        Me.buttonSaveThumbnail.Size = New System.Drawing.Size(158, 29)
-        Me.buttonSaveThumbnail.TabIndex = 5
-        Me.buttonSaveThumbnail.Text = "Save thumbnail"
-        Me.buttonSaveThumbnail.UseVisualStyleBackColor = True
-        '
         'savefiledialogSaveThumbnail
         '
         Me.savefiledialogSaveThumbnail.Filter = "JPG files (*.jpg)|*.jpg|JPEG files (*.jpeg)|*.jpeg|PNG files (*.png)|*.png|All fi" &
     "les (*.*)|*.*"
         Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
+        '
+        'checkboxUseHQDefault
+        '
+        Me.checkboxUseHQDefault.AutoSize = True
+        Me.checkboxUseHQDefault.Location = New System.Drawing.Point(8, 156)
+        Me.checkboxUseHQDefault.Name = "checkboxUseHQDefault"
+        Me.checkboxUseHQDefault.Size = New System.Drawing.Size(209, 17)
+        Me.checkboxUseHQDefault.TabIndex = 6
+        Me.checkboxUseHQDefault.Text = "Use hqdefault instead of maxresdefault"
+        Me.tooltipCheckboxHQDefault.SetToolTip(Me.checkboxUseHQDefault, "Try if the thumbnail won't show up")
+        Me.checkboxUseHQDefault.UseVisualStyleBackColor = True
         '
         'aaformMainWindow
         '
@@ -167,4 +182,6 @@ Partial Class aaformMainWindow
     Friend WithEvents buttonPreviewThumbnail As Button
     Friend WithEvents buttonSaveThumbnail As Button
     Friend WithEvents savefiledialogSaveThumbnail As SaveFileDialog
+    Friend WithEvents checkboxUseHQDefault As CheckBox
+    Friend WithEvents tooltipCheckboxHQDefault As ToolTip
 End Class
