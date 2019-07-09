@@ -53,11 +53,11 @@ Public Class aaformMainWindow
             Try
                 thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
             Catch ex As System.Net.WebException
-                ' Let the user know there's an issue with the thumbnail and ask them if
-                ' they want to use hqdefault instead if the checkbox is unchecked.
-                If checkboxUseHQDefault.Checked = False Then
-
-                End If
+                ' Let the user know there's an issue with the thumbnail.
+                MessageBox.Show("Sorry, we couldn't find the thumbnail for the video in the Video URL textbox. Please check the" &
+                                " ""Use hqdefault instead of maxresdefault"" checkbox and try again. If the issue persists, the video may be private.",
+                                "Save thumbnail", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
         End If
 
     End Sub
