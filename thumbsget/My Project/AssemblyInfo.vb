@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("thumbsget")>
-<Assembly: AssemblyDescription("Gets the maxres or hq thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.")>
+<Assembly: AssemblyDescription("Gets the maxres or hq thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google/Alphabet.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("thumbsget")>
 <Assembly: AssemblyCopyright("Copyright © 2018-2019 Drew Naylor. Licensed under the Gnu GPL v3+.")>
