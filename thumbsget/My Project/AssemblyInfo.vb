@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("thumbsget")>
-<Assembly: AssemblyDescription("Gets the maxresdefault thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.")>
+<Assembly: AssemblyDescription("Gets the maxres or hq thumbnail for YouTube videos from original video URL. Not associated with YouTube or Google.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("thumbsget")>
 <Assembly: AssemblyCopyright("Copyright © 2018-2019 Drew Naylor. Licensed under the Gnu GPL v3+.")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.1.0.0")>
-<Assembly: AssemblyFileVersion("0.1.0.0")>
+<Assembly: AssemblyVersion("0.2.0.0")>
+<Assembly: AssemblyFileVersion("0.2.0.0")>
