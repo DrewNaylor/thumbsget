@@ -49,7 +49,15 @@ Public Class aaformMainWindow
         If savefiledialogSaveThumbnail.ShowDialog() = DialogResult.OK Then
             ' If the user clicks "Ok", save the file using a new WebClient.
             Dim thumbnailDownloader As New Net.WebClient
-            thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
+            ' Need to catch WebExceptions when the thumbnail can't be found.
+            Try
+                thumbnailDownloader.DownloadFile(getThumbnailUrl, savefiledialogSaveThumbnail.FileName)
+            Catch ex As System.Net.WebException
+                ' Let the user know there's an issue with the thumbnail and ask them if
+                ' they want to use hqdefault instead if the checkbox is unchecked.
+                If checkboxUseHQDefault.Checked = False Then
+
+                End If
         End If
 
     End Sub
