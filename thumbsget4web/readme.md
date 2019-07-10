@@ -10,6 +10,8 @@ thumbsget4web is installed on my website and you can use it here: https://drew-n
 
 thumbsget4web has a limitation where it can't actually save thumbnails directly with a "Save thumbnail" button, so the user has to manually save the thumbnails, either by right-clicking on the preview image or by right-clicking on the image in a new tab, then clicking "Save image as" or similar. This limitation is imposed by most web browsers ignoring the `download` attribute for the `anchor` tag if going across domains for security purposes.
 
+Additionally, thumbsget4web will *not* work in Internet Explorer. This has been tested in IE11, but it's assumed that it won't work in older versions either. The reason is that IE doesn't support one of the JavaScript functions used to determine what to change in the video URL (`includes`, to be specific). This could be fixed by [polyfilling the function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes#Polyfill), but I don't want to do that since barely anyone uses IE anymore.
+
 
 ## Screenshot
 
