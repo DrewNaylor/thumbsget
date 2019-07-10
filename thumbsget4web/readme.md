@@ -20,6 +20,26 @@ Additionally, thumbsget4web will *not* work in Internet Explorer. This has been 
 
 ## Recent updates
 
+### Version 0.2.0.0 - July 10, 2019:
+
+Quite a bit of the work in 0.2 was focused on making the UI look better, and in some cases, almost like the desktop version. The thumbnail preview is still below the buttons rather than on the side. This is both because I can't figure out how to make it look nice while moving it over to the right side, and also being an easier way for mobile users to interact with the UI in my opinion. Desktop users might not be bothered with horizontal space being taken up, while it's precious on mobile for anyone who doesn't rotate their device.
+
+- Added:
+  - Almost everything looks better as CSS is now being used instead of the default HTML styling. What changes:
+    - The text is now using Arial or sans-serif fonts, depending on which is available. They're sized at 13 pixels, so increasing the size may be required, but I don't really know yet.
+	- Video URL textbox is now longer to usually match the thumbnail preview image box. Had an issue in mobile Safari where it kinda went over the edge with 100% max width.
+	- Buttons should now match the size of the buttons on the Windows version of thumbsget, at least on Windows 10 and in Firefox.
+	- There are a few places that the UI is responsive now, and those are the textbox length, the thumbnail preview image box, and the checkbox to use hqdefault.
+	- Some margins have been added between the controls to space them out a bit.
+  - More meta tags have been added to describe thumbsget4web better, such as description, application name, author, and a few other things.
+- Changed:
+  - Video URL textbox has been moved to its own line below the "Video URL:" label to make it closer to the desktop version in appearance.
+  - The description in the About message has been updated to mention both maxres and hq versions of the thumbnails as being what it can get.
+- Fixed:
+  - On mobile/small screen devices, the thumbnail preview now resizes itself to stay within the edges of the display so you don't have to scroll horizontally to see the rest of the preview. This is also visible when resizing a desktop browser window to be smaller in width than the main UI would be.
+  - The thumbnail preview image box now has an alt text attribute that shows up if an image isn't loaded or images are disabled.
+  - There was a typo in the "Video URL:" label where its "for" attribute was using a colon instead of an equals sign.
+
 ### Version 0.1.2.0 - July 9, 2019:
 
 - Fixed:

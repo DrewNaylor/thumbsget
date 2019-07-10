@@ -28,18 +28,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with thumbsget4web.  If not, see <http://www.gnu.org/licenses/>. */
 
-div {
-	
-}
-
 label {
 	font-family: Arial,sans-serif;
-	font-size: 12.5px;
+	font-size: 13px;
 }
 
 input {
 	font-family: Arial,sans-serif;
-	font-size: 12.5px;
+	font-size: 13px;
 }
 
 input[type="text"] {
@@ -64,18 +60,21 @@ img {
 	height: 243px;
 	width: 432px;
 /* 	object-fit info from here:
-	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit 
+	this seems to make the image box work like zooming in the Windows Forms one. */
 	object-fit: contain;
 	max-width: 100%;
 	margin-top: 8px;
+	font-family: Arial,sans-serif;
+	font-size: 12.5px;
 }
 
 a {
 	font-family: Arial,sans-serif;
-	font-size: 12.5px;
+	font-size: 13px;
 }
 
 p {
 	font-family: Arial,sans-serif;
-	font-size: 12.5px;
+	font-size: 13px;
 }
