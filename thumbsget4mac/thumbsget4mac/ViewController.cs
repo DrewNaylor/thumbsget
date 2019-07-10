@@ -56,6 +56,10 @@ namespace thumbsget4mac
             NSSavePanel savefiledialogSaveThumbnail = new NSSavePanel();
             savefiledialogSaveThumbnail.Title = "Save thumbnail";
             savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
+
+
+            // If the checkbox to use hqdefault is checked, use a different filename.
+            // TODO: Implement this if/else statement.
             savefiledialogSaveThumbnail.NameFieldStringValue = "maxresdefault.jpg";
 
             //  Now open the save dialog.
@@ -71,12 +75,12 @@ namespace thumbsget4mac
                 catch (System.Net.WebException e)
                 // Let the user know there's an issue with the thumbnail.
                 {
-                    var alert = new NSAlert();
-                    alert.AlertStyle = NSAlertStyle.Critical;
-                    alert.MessageText = "Save thumbnail";
-                    alert.InformativeText = "Sorry, we couldn't find the thumbnail for the video in the Video URL textbox. Please check the"
+                    var alertThumbnailNotFound = new NSAlert();
+                    alertThumbnailNotFound.AlertStyle = NSAlertStyle.Critical;
+                    alertThumbnailNotFound.MessageText = "Save thumbnail";
+                    alertThumbnailNotFound.InformativeText = "Sorry, we couldn't find the thumbnail for the video in the Video URL textbox. Please check the"
                                             + " \"Use hqdefault instead of maxresdefault\" checkbox and try again. If the issue persists, the video may be private.";
-                    alert.RunModal();
+                    alertThumbnailNotFound.RunModal();
                 }
 
             }
