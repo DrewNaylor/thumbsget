@@ -28,6 +28,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with thumbsget4web.  If not, see <http://www.gnu.org/licenses/>. */
 
+div {
+	
+}
+
 label {
 	font-family: Arial,sans-serif;
 	font-size: 12.5px;
@@ -42,6 +46,7 @@ input[type="text"] {
 	/* Based on this SO anser:
 	https://stackoverflow.com/a/2125516 */
 	width: 320px;
+	max-width: 100%;
 }
 
 input[type="button"] {
@@ -60,6 +65,7 @@ img {
 /* 	object-fit info from here:
 	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
 	object-fit: contain;
+	max-width: 100%;
 }
 
 a {
