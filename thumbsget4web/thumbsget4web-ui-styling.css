@@ -45,7 +45,7 @@ input {
 input[type="text"] {
 	/* Based on this SO anser:
 	https://stackoverflow.com/a/2125516 */
-	width: 320px;
+	width: 432px;
 	max-width: 100%;
 }
 
