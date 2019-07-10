@@ -63,7 +63,22 @@ namespace thumbsget4mac
             {
                 // Get the file.
                 System.Net.WebClient thumbnailDownloader = new System.Net.WebClient();
-                thumbnailDownloader.DownloadFile(getThumbnailUrl(), savefiledialogSaveThumbnail.Filename);
+                // Need to catch WebExceptions when the thumbnail can't be found.
+                try
+                {
+                    thumbnailDownloader.DownloadFile(getThumbnailUrl(), savefiledialogSaveThumbnail.Filename);
+                }
+                catch (System.Net.WebException e)
+                // Let the user know there's an issue with the thumbnail.
+                {
+                    var alert = new NSAlert();
+                    alert.AlertStyle = NSAlertStyle.Critical;
+                    alert.MessageText = "Save thumbnail";
+                    alert.InformativeText = "Sorry, we couldn't find the thumbnail for the video in the Video URL textbox. Please check the"
+                                            + " \"Use hqdefault instead of maxresdefault\" checkbox and try again. If the issue persists, the video may be private.";
+                    alert.RunModal();
+                }
+
             }
         }
 
@@ -138,19 +153,23 @@ namespace thumbsget4mac
                 thumbnailUrl = thumbnailUrl.Replace("youtube.com/", "i.ytimg.com/vi/");
                 Debug.WriteLine("Replace youtube.com/. Current URL: " + thumbnailUrl);
 
-                // Add "maxresdefault.jpg" to end of URL.
+                // Add "maxresdefault.jpg" to end of URL if the checkbox
+                // to use hqdefault instead is unchecked.
                 if (checkboxUseHQDefault.State == NSCellStateValue.Off)
                {
                     thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg";
+                    Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
                 }
-                else
+                else //Otherwise, add "hqdefault" to the URL if the
+                // checkbox is checked.
                 {
                     thumbnailUrl = thumbnailUrl + "/hqdefault.jpg";
+                    Debug.WriteLine("Append /hqdefault.jpg. Current URL: " + thumbnailUrl);
                 }
 
 
 
-                Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
+
 
                 // Return the thumbnail URL if the textbox isn't empty.
                 return thumbnailUrl;
