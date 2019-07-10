@@ -13,6 +13,9 @@ namespace thumbsget4mac
 	partial class ViewController
 	{
 		[Outlet]
+		AppKit.NSButton checkboxUseHQDefault { get; set; }
+
+		[Outlet]
 		AppKit.NSImageView pictureboxPreview { get; set; }
 
 		[Outlet]
@@ -37,6 +40,11 @@ namespace thumbsget4mac
 			if (textboxVideoUrl != null) {
 				textboxVideoUrl.Dispose ();
 				textboxVideoUrl = null;
+			}
+
+			if (checkboxUseHQDefault != null) {
+				checkboxUseHQDefault.Dispose ();
+				checkboxUseHQDefault = null;
 			}
 		}
 	}

@@ -170,7 +170,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button toolTip="Try if thumbnail won't load" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3O-Zi-Bp0">
+                                        <button toolTip="Try if the thumbnail won't load" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3O-Zi-Bp0">
                                             <rect key="frame" x="8" y="58" width="181" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" scrollable="YES" lineBreakMode="clipping" inset="2" id="NDx-J5-Pcz">
@@ -186,6 +186,7 @@ maxresdefault</string>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="checkboxUseHQDefault" destination="L3O-Zi-Bp0" id="JQc-Wo-eSP"/>
                         <outlet property="pictureboxPreview" destination="21k-Zs-WwO" id="cTu-Ml-s7N"/>
                         <outlet property="textboxVideoUrl" destination="0lZ-zZ-F9U" id="FhD-cd-ONh"/>
                     </connections>

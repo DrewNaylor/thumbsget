@@ -139,7 +139,17 @@ namespace thumbsget4mac
                 Debug.WriteLine("Replace youtube.com/. Current URL: " + thumbnailUrl);
 
                 // Add "maxresdefault.jpg" to end of URL.
-                thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg";
+                if (checkboxUseHQDefault.State == NSCellStateValue.Off)
+               {
+                    thumbnailUrl = thumbnailUrl + "/maxresdefault.jpg";
+                }
+                else
+                {
+                    thumbnailUrl = thumbnailUrl + "/hqdefault.jpg";
+                }
+
+
+
                 Debug.WriteLine("Append /maxresdefault.jpg. Current URL: " + thumbnailUrl);
 
                 // Return the thumbnail URL if the textbox isn't empty.
