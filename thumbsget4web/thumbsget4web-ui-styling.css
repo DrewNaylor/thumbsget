@@ -57,6 +57,7 @@ input[type="button"] {
 
 input[type="checkbox"] {
 	margin-top: 8px;
+	max-width: 100%;
 }
 
 img {
@@ -66,7 +67,7 @@ img {
 	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
 	object-fit: contain;
 	max-width: 100%;
-	margin: 8px;
+	margin-top: 8px;
 }
 
 a {
