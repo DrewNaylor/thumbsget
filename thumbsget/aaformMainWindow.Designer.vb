@@ -25,6 +25,7 @@ Partial Class aaformMainWindow
         Me.components = New System.ComponentModel.Container()
         Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.panelUrlAndButton = New System.Windows.Forms.Panel()
+        Me.checkboxUseHQDefault = New System.Windows.Forms.CheckBox()
         Me.buttonSaveThumbnail = New System.Windows.Forms.Button()
         Me.buttonPreviewThumbnail = New System.Windows.Forms.Button()
         Me.pictureboxPreview = New System.Windows.Forms.PictureBox()
@@ -33,7 +34,6 @@ Partial Class aaformMainWindow
         Me.textboxVideoUrl = New System.Windows.Forms.TextBox()
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.savefiledialogSaveThumbnail = New System.Windows.Forms.SaveFileDialog()
-        Me.checkboxUseHQDefault = New System.Windows.Forms.CheckBox()
         Me.tooltipCheckboxHQDefault = New System.Windows.Forms.ToolTip(Me.components)
         Me.flowlayoutpanelMainWindow.SuspendLayout()
         Me.panelUrlAndButton.SuspendLayout()
@@ -69,6 +69,17 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Name = "panelUrlAndButton"
         Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 178)
         Me.panelUrlAndButton.TabIndex = 0
+        '
+        'checkboxUseHQDefault
+        '
+        Me.checkboxUseHQDefault.AutoSize = True
+        Me.checkboxUseHQDefault.Location = New System.Drawing.Point(8, 156)
+        Me.checkboxUseHQDefault.Name = "checkboxUseHQDefault"
+        Me.checkboxUseHQDefault.Size = New System.Drawing.Size(209, 17)
+        Me.checkboxUseHQDefault.TabIndex = 6
+        Me.checkboxUseHQDefault.Text = "Use hqdefault instead of maxresdefault"
+        Me.tooltipCheckboxHQDefault.SetToolTip(Me.checkboxUseHQDefault, "Try if the thumbnail won't load")
+        Me.checkboxUseHQDefault.UseVisualStyleBackColor = True
         '
         'buttonSaveThumbnail
         '
@@ -141,17 +152,6 @@ Partial Class aaformMainWindow
     "les (*.*)|*.*"
         Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
-        '
-        'checkboxUseHQDefault
-        '
-        Me.checkboxUseHQDefault.AutoSize = True
-        Me.checkboxUseHQDefault.Location = New System.Drawing.Point(8, 156)
-        Me.checkboxUseHQDefault.Name = "checkboxUseHQDefault"
-        Me.checkboxUseHQDefault.Size = New System.Drawing.Size(209, 17)
-        Me.checkboxUseHQDefault.TabIndex = 6
-        Me.checkboxUseHQDefault.Text = "Use hqdefault instead of maxresdefault"
-        Me.tooltipCheckboxHQDefault.SetToolTip(Me.checkboxUseHQDefault, "Try if the thumbnail won't show up")
-        Me.checkboxUseHQDefault.UseVisualStyleBackColor = True
         '
         'aaformMainWindow
         '
