@@ -46,6 +46,8 @@ input[type="text"] {
 
 input[type="button"] {
 	margin-top: 8px;
+	height: 29px;
+	width: 209;
 }
 
 input[type="checkbox"] {
