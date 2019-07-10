@@ -1,6 +1,6 @@
 # thumbsget4web
 
-This is a port of thumbsget to a webpage that uses JavaScript to show the thumbnails in the preview box.
+This is an official port of thumbsget to a webpage that uses JavaScript to show the thumbnails in the preview box.
 
 thumbsget4web is installed on my website and you can use it here: https://drew-naylor.com/projects/thumbsget4web/thumbsget4web.html
 
@@ -24,11 +24,11 @@ Quite a bit of the work in 0.2 was focused on making the UI look better, and in 
 
 - Added:
   - Almost everything looks better as CSS is now being used instead of the default HTML styling. What changes:
-    - The text is now using Arial or sans-serif fonts, depending on which is available. They're sized at 13 pixels, so increasing the size may be required, but I don't really know yet.
-	- Video URL textbox is now longer to usually match the thumbnail preview image box. Had an issue in mobile Safari where it kinda went over the edge with 100% max width.
-	- Buttons should now match the size of the buttons on the Windows version of thumbsget, at least on Windows 10 and in Firefox.
-	- There are a few places that the UI is responsive now, and those are the textbox length, the thumbnail preview image box, and the checkbox to use hqdefault.
-	- Some margins have been added between the controls to space them out a bit.
+      - The text is now using Arial or sans-serif fonts, depending on which is available. They're sized at 13 pixels, so increasing the size may be required, but I don't really know yet.
+      - Video URL textbox is now longer to usually match the thumbnail preview image box. Had an issue in mobile Safari where it kinda went over the edge with 100% max width.
+      - Buttons should now match the size of the buttons on the Windows version of thumbsget, at least on Windows 10 and in Firefox.
+      - There are a few places that the UI is responsive now, and those are the textbox length, the thumbnail preview image box, and the checkbox to use hqdefault.
+      - Some margins have been added between the controls to space them out a bit.
   - More meta tags have been added to describe thumbsget4web better, such as description, application name, author, and a few other things.
   - Proper boilerplate text has also been added.
 - Changed:
