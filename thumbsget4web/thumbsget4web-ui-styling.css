@@ -46,13 +46,13 @@ input[type="text"] {
 	/* Based on this SO anser:
 	https://stackoverflow.com/a/2125516 */
 	width: 432px;
-	max-width: 100%;
+	max-width: 97%;
 }
 
 input[type="button"] {
 	margin-top: 8px;
 	height: 29px;
-	width: 209;
+	width: 209px;
 }
 
 input[type="checkbox"] {
@@ -66,6 +66,7 @@ img {
 	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
 	object-fit: contain;
 	max-width: 100%;
+	margin: 8px;
 }
 
 a {
