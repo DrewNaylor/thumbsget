@@ -32,6 +32,7 @@ Quite a bit of the work in 0.2 was focused on making the UI look better, and in 
 	- There are a few places that the UI is responsive now, and those are the textbox length, the thumbnail preview image box, and the checkbox to use hqdefault.
 	- Some margins have been added between the controls to space them out a bit.
   - More meta tags have been added to describe thumbsget4web better, such as description, application name, author, and a few other things.
+  - Proper boilerplate text has also been added.
 - Changed:
   - Video URL textbox has been moved to its own line below the "Video URL:" label to make it closer to the desktop version in appearance.
   - The description in the About message has been updated to mention both maxres and hq versions of the thumbnails as being what it can get.
