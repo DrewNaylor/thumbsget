@@ -54,6 +54,14 @@ input[type="checkbox"] {
 	margin-top: 8px;
 }
 
+img {
+	height: 243px;
+	width: 432px;
+/* 	object-fit info from here:
+	https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+	object-fit: contain;
+}
+
 a {
 	font-family: Arial,sans-serif;
 	font-size: 12.5px;
