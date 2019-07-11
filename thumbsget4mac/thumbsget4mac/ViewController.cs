@@ -58,9 +58,17 @@ namespace thumbsget4mac
             savefiledialogSaveThumbnail.AllowedFileTypes = new string[] { "jpg", "jpeg", "png", "null" };
 
 
-            // If the checkbox to use hqdefault is checked, use a different filename.
-            // TODO: Implement this if/else statement.
-            savefiledialogSaveThumbnail.NameFieldStringValue = "maxresdefault.jpg";
+            // If the checkbox to use hqdefault is unchecked, use the regular filename.
+            if (checkboxUseHQDefault.State == NSCellStateValue.Off)
+            {
+                savefiledialogSaveThumbnail.NameFieldStringValue = "maxresdefault.jpg";
+            }
+            else //Otherwise, use "hqdefault" in the save dialog if the
+                 // checkbox is checked.
+            {
+                savefiledialogSaveThumbnail.NameFieldStringValue = "hqdefault.jpg";
+            }
+
 
             //  Now open the save dialog.
             if (savefiledialogSaveThumbnail.RunModal () == 1)
@@ -72,7 +80,7 @@ namespace thumbsget4mac
                 {
                     thumbnailDownloader.DownloadFile(getThumbnailUrl(), savefiledialogSaveThumbnail.Filename);
                 }
-                catch (System.Net.WebException e)
+                catch (System.Net.WebException)
                 // Let the user know there's an issue with the thumbnail.
                 {
                     var alertThumbnailNotFound = new NSAlert();
