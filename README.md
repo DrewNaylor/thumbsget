@@ -7,7 +7,7 @@ After getting the thumbnail URL, it'll open in the default browser. You can also
   - macOS: [thumbsget4mac](./thumbsget4mac/)
   - Webpage/HTML/webapp/whatever: [thumbsget4web](./thumbsget4web/)
   
-As of July 4, 2019, thumbsget4web allows loading the hqdefault thumbnail instead of the maxresdefault thumbnail, in case there's no maxresdefault version. The Windows version also has this feature as of July 9, 2019, but the Mac version still doesn't have it yet.
+As of July 10, 2019, thumbsget for Windows, Mac, and Web all support getting the hqdefault thumbnail in case the maxresdefault one doesn't exist. There's a checkbox to do this, so it has to be checked and isn't done automatically.
 
 The Windows version of thumbsget is supported under Linux if .Net 4.6.1 is installed, which can be done through winetricks.  Doesn't look the best, though.
 
