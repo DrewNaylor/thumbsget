@@ -1,0 +1,75 @@
+{
+    "app-id": "com.drew-naylor.thumbsget4gtk",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.30",
+    "sdk": "org.gnome.Sdk",
+    "command": "thumbsget4gtk",
+    "sdk-extensions": ["org.freedesktop.Sdk.Extension.mono5"],
+    "finish-args": [
+        "--share=network",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    ],
+    "build-options" : {
+        "append-path": "/usr/lib/sdk/mono5/bin",
+        "append-ld-library-path": "/usr/lib/sdk/mono5/lib",
+        "env": {
+            "PKG_CONFIG_PATH": "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/mono5/lib/pkgconfig"
+        }
+    },
+    "cleanup": [ "/lib/monodoc", "/lib/pkgconfig" ],
+    "modules": [
+        {
+            "name": "mono-runtime",
+            "buildsystem": "simple",
+            "build-commands": ["/usr/lib/sdk/mono5/install.sh "],
+            "build-options" : {
+                "no-debuginfo": true,
+                "strip": true
+            }
+        },
+        {
+            "name" : "meson",
+            "buildsystem" : "simple",
+            "build-commands": ["pip3 install -I --prefix=/app ."],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/mesonbuild/meson.git",
+                    "branch" : "0.48.1"
+                }
+            ]
+        },
+        {
+            "name": "gtk-sharp3",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts" : [
+                "--libdir=lib",
+                "-Dinstall=true"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/GLibSharp/GtkSharp"
+                }
+            ]
+        },
+        {
+            "name": "thumbsget4gtk",
+            "buildsystem": "meson",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "file:///home/drew/GitHub/thumbsget/thumbsget4gtk"
+                }
+            ]
+        }
+    ]
+}

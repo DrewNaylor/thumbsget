@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=thumbsget4gtk
+Exec=thumbsget4gtk
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
