@@ -1,7 +1,9 @@
+#!/usr/bin/env python
+
 #File based on this StackOverflow answer:
 #https://stackoverflow.com/a/57455040
 
-#!/usr/bin/env python
+
 
 import gi
 gi.require_version('Gtk', '3.0')
