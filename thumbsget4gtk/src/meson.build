@@ -19,3 +19,10 @@ configure_file(
         install: true,
     install_dir: get_option('bindir'),
 )
+configure_file(
+          input: 'aaformMainWindow.glade',
+         output: 'aaformMainWindow.glade',
+  configuration: cdata,
+        install: true,
+    install_dir: get_option('bindir'),
+)
