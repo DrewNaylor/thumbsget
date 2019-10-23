@@ -1,5 +1,5 @@
 {
-    "app-id": "com.drew-naylor.thumbsget4gtk",
+    "app-id": "com.drewnaylor.thumbsget4gtk",
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.30",
     "sdk": "org.gnome.Sdk",
@@ -41,7 +41,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mesonbuild/meson.git",
-                    "branch" : "0.48.1"
+                    "branch" : "0.50"
                 }
             ]
         },

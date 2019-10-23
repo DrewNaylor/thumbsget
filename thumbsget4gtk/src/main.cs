@@ -1,25 +1,27 @@
 using Gtk;
+using System;
+//using Glade;
 
-namespace Example
+namespace thumbsget4gtk
 {
-	public class App
+	class aaformMainWindow
 	{
-		static void Main (string[] args)
+		public aaformMainWindow()
 		{
-			Application.Init ();
 
-			var window = new Gtk.Window ("Example");
+		Application.Init();
+		//Glade.XML gxml = Glade.XML(null, "aaformMainWindow.glade", "thumbsget4gtk", null);
+		Builder mainWindow = new Builder();
+		mainWindow.AddFromFile("aaformMainWindow.glade");
+		mainWindow.Autoconnect(this);
+		Gtk.Application.Run();
 
-			var label = new Gtk.Label ("Hello, World!");
-			window.Add (label);
-			label.Show ();
-
-			window.DeleteEvent += (win, ev) => {
-				Application.Quit ();
-			};
-
-			window.Present ();
-			Application.Run ();
 		}
+
+		public static void Main()
+		{
+			new aaformMainWindow();
+		}
+
 	}
 }
