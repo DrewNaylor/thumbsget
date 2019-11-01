@@ -21,9 +21,7 @@ class GUI:
 
         window = self.builder.get_object('aaformMainWindow')
         window.show()
-
-    def on_window_destroy(self, window):
-        Gtk.main_quit()
+        window.connect("destroy", Gtk.main_quit)
 
     def home_clicked (self, button):
         stack = self.builder.get_object('stack')
