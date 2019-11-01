@@ -99,11 +99,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkCheckButton">
-                    <property name="label" translatable="yes">checkbutton</property>
+                  <object class="GtkCheckButton" id="buttonUseHqDefault">
+                    <property name="label" translatable="yes">Use hqdefault instead of maxresdefault</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_text" translatable="yes">Try if the thumbnail won't load</property>
                     <property name="valign">baseline</property>
                     <property name="draw_indicator">True</property>
                   </object>

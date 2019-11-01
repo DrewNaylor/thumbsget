@@ -23,6 +23,9 @@ class GUI:
         window.show()
         window.connect("destroy", Gtk.main_quit)
 
+    def onViewThumbnailInBrowserButtonClicked (self, buttonViewThumbnailInBrowser):
+        print("Test")
+
     def home_clicked (self, button):
         stack = self.builder.get_object('stack')
         home_button = self.builder.get_object('home_button')
