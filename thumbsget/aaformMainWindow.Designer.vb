@@ -34,10 +34,10 @@ Partial Class aaformMainWindow
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.savefiledialogSaveThumbnail = New System.Windows.Forms.SaveFileDialog()
         Me.tooltipCheckboxHQDefault = New System.Windows.Forms.ToolTip(Me.components)
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.panelUrlAndButton.SuspendLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.tablelayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelUrlAndButton
@@ -142,34 +142,34 @@ Partial Class aaformMainWindow
         Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
         '
-        'TableLayoutPanel1
+        'tablelayoutpanelMainWindow
         '
-        Me.TableLayoutPanel1.ColumnCount = 1
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.panelUrlAndButton, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.linklabelAbout, 0, 1)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(525, 204)
-        Me.TableLayoutPanel1.TabIndex = 2
+        Me.tablelayoutpanelMainWindow.ColumnCount = 1
+        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.panelUrlAndButton, 0, 0)
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.linklabelAbout, 0, 1)
+        Me.tablelayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 0)
+        Me.tablelayoutpanelMainWindow.Name = "tablelayoutpanelMainWindow"
+        Me.tablelayoutpanelMainWindow.RowCount = 2
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(525, 204)
+        Me.tablelayoutpanelMainWindow.TabIndex = 2
         '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(525, 204)
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.tablelayoutpanelMainWindow)
         Me.Name = "aaformMainWindow"
         Me.Text = "thumbsget"
         Me.panelUrlAndButton.ResumeLayout(False)
         Me.panelUrlAndButton.PerformLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
+        Me.tablelayoutpanelMainWindow.ResumeLayout(False)
+        Me.tablelayoutpanelMainWindow.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -184,5 +184,5 @@ Partial Class aaformMainWindow
     Friend WithEvents savefiledialogSaveThumbnail As SaveFileDialog
     Friend WithEvents checkboxUseHQDefault As CheckBox
     Friend WithEvents tooltipCheckboxHQDefault As ToolTip
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
 End Class
