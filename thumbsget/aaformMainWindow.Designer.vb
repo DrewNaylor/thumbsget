@@ -163,7 +163,6 @@ Partial Class aaformMainWindow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(525, 204)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.MaximizeBox = False
         Me.Name = "aaformMainWindow"
         Me.Text = "thumbsget"
         Me.panelUrlAndButton.ResumeLayout(False)
