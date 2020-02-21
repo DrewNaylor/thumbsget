@@ -65,10 +65,6 @@ class GUI(Gtk.ApplicationWindow):
     def view_thumbnail_in_browser_callback(self, widget):
         print("Thumbnail opened in browser.")
 
-"""     def on_window_destroy(self, app):
-        Gtk.main_quit()
- """
-
 class Application(Gtk.Application):
     def __init__(self):
         Gtk.Application.__init__(self)

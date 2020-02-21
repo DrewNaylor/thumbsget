@@ -23,7 +23,6 @@ Partial Class aaformMainWindow
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.flowlayoutpanelMainWindow = New System.Windows.Forms.FlowLayoutPanel()
         Me.panelUrlAndButton = New System.Windows.Forms.Panel()
         Me.checkboxUseHQDefault = New System.Windows.Forms.CheckBox()
         Me.buttonSaveThumbnail = New System.Windows.Forms.Button()
@@ -35,28 +34,14 @@ Partial Class aaformMainWindow
         Me.linklabelAbout = New System.Windows.Forms.LinkLabel()
         Me.savefiledialogSaveThumbnail = New System.Windows.Forms.SaveFileDialog()
         Me.tooltipCheckboxHQDefault = New System.Windows.Forms.ToolTip(Me.components)
-        Me.flowlayoutpanelMainWindow.SuspendLayout()
+        Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.panelUrlAndButton.SuspendLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tablelayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'flowlayoutpanelMainWindow
-        '
-        Me.flowlayoutpanelMainWindow.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.flowlayoutpanelMainWindow.BackColor = System.Drawing.SystemColors.Window
-        Me.flowlayoutpanelMainWindow.Controls.Add(Me.panelUrlAndButton)
-        Me.flowlayoutpanelMainWindow.Controls.Add(Me.linklabelAbout)
-        Me.flowlayoutpanelMainWindow.Location = New System.Drawing.Point(0, 0)
-        Me.flowlayoutpanelMainWindow.Name = "flowlayoutpanelMainWindow"
-        Me.flowlayoutpanelMainWindow.Size = New System.Drawing.Size(525, 204)
-        Me.flowlayoutpanelMainWindow.TabIndex = 0
         '
         'panelUrlAndButton
         '
-        Me.panelUrlAndButton.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.panelUrlAndButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelUrlAndButton.Controls.Add(Me.checkboxUseHQDefault)
         Me.panelUrlAndButton.Controls.Add(Me.buttonSaveThumbnail)
@@ -65,9 +50,10 @@ Partial Class aaformMainWindow
         Me.panelUrlAndButton.Controls.Add(Me.buttonGetThumbnailInBrowser)
         Me.panelUrlAndButton.Controls.Add(Me.labelVideoUrl)
         Me.panelUrlAndButton.Controls.Add(Me.textboxVideoUrl)
+        Me.panelUrlAndButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelUrlAndButton.Location = New System.Drawing.Point(3, 3)
         Me.panelUrlAndButton.Name = "panelUrlAndButton"
-        Me.panelUrlAndButton.Size = New System.Drawing.Size(518, 178)
+        Me.panelUrlAndButton.Size = New System.Drawing.Size(519, 182)
         Me.panelUrlAndButton.TabIndex = 0
         '
         'checkboxUseHQDefault
@@ -101,6 +87,9 @@ Partial Class aaformMainWindow
         '
         'pictureboxPreview
         '
+        Me.pictureboxPreview.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pictureboxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pictureboxPreview.Location = New System.Drawing.Point(223, 50)
         Me.pictureboxPreview.Name = "pictureboxPreview"
@@ -133,13 +122,13 @@ Partial Class aaformMainWindow
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.textboxVideoUrl.Location = New System.Drawing.Point(8, 23)
         Me.textboxVideoUrl.Name = "textboxVideoUrl"
-        Me.textboxVideoUrl.Size = New System.Drawing.Size(501, 20)
+        Me.textboxVideoUrl.Size = New System.Drawing.Size(502, 20)
         Me.textboxVideoUrl.TabIndex = 0
         '
         'linklabelAbout
         '
         Me.linklabelAbout.AutoSize = True
-        Me.linklabelAbout.Location = New System.Drawing.Point(3, 184)
+        Me.linklabelAbout.Location = New System.Drawing.Point(3, 188)
         Me.linklabelAbout.Name = "linklabelAbout"
         Me.linklabelAbout.Size = New System.Drawing.Size(35, 13)
         Me.linklabelAbout.TabIndex = 1
@@ -153,26 +142,37 @@ Partial Class aaformMainWindow
         Me.savefiledialogSaveThumbnail.RestoreDirectory = True
         Me.savefiledialogSaveThumbnail.Title = "Save thumbnail"
         '
+        'tablelayoutpanelMainWindow
+        '
+        Me.tablelayoutpanelMainWindow.ColumnCount = 1
+        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.panelUrlAndButton, 0, 0)
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.linklabelAbout, 0, 1)
+        Me.tablelayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 0)
+        Me.tablelayoutpanelMainWindow.Name = "tablelayoutpanelMainWindow"
+        Me.tablelayoutpanelMainWindow.RowCount = 2
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(525, 204)
+        Me.tablelayoutpanelMainWindow.TabIndex = 2
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(525, 204)
-        Me.Controls.Add(Me.flowlayoutpanelMainWindow)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
+        Me.Controls.Add(Me.tablelayoutpanelMainWindow)
         Me.Name = "aaformMainWindow"
         Me.Text = "thumbsget"
-        Me.flowlayoutpanelMainWindow.ResumeLayout(False)
-        Me.flowlayoutpanelMainWindow.PerformLayout()
         Me.panelUrlAndButton.ResumeLayout(False)
         Me.panelUrlAndButton.PerformLayout()
         CType(Me.pictureboxPreview, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tablelayoutpanelMainWindow.ResumeLayout(False)
+        Me.tablelayoutpanelMainWindow.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents flowlayoutpanelMainWindow As FlowLayoutPanel
     Friend WithEvents panelUrlAndButton As Panel
     Friend WithEvents linklabelAbout As LinkLabel
     Friend WithEvents textboxVideoUrl As TextBox
@@ -184,4 +184,5 @@ Partial Class aaformMainWindow
     Friend WithEvents savefiledialogSaveThumbnail As SaveFileDialog
     Friend WithEvents checkboxUseHQDefault As CheckBox
     Friend WithEvents tooltipCheckboxHQDefault As ToolTip
+    Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
 End Class
