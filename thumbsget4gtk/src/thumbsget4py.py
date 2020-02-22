@@ -11,7 +11,9 @@
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+from gi.repository import Gdk
 import sys
+import urllib.request
 
 
 UI_FILE = "aaformMainWindow.glade"
@@ -43,6 +45,8 @@ class GUI(Gtk.ApplicationWindow):
         self.buttonAbout = builder.get_object("buttonAbout")
         # Get video URL textbox.
         self.textboxVideoUrl = builder.get_object("textboxVideoUrl")
+        # Get image box.
+        self.imageboxThumbnail = builder.get_object("imageboxThumbnail")
 
         # Create actions that are used when clicking buttons
         # connect their signal to a callback method, and add
@@ -60,6 +64,17 @@ class GUI(Gtk.ApplicationWindow):
 
     def preview_thumbnail_callback(self, widget):
         print(thumbnailUrl.getThumbnailUrl(self, self.textboxVideoUrl.get_text()))
+        # Loading image based on this StackOverflow answer:
+        # https://stackoverflow.com/a/3962377
+        # Currently broken as it seems like there isn't an easy way to update
+        # the image from a URL.
+        thumbnailTempDownload = urllib.request.Request(self, self.textboxVideoUrl.get_text())
+        thumbnailPixbufLoader = Gtk.PixbufLoader()
+        with urllib.request.urlopen(thumbnailTempDownload) as response:
+            thumbnailPixbufLoader.write(response.read())
+        thumbnailPixbufLoader.close()
+        self.imageboxThumbnail.set_from_pixbuf(thumbnailPixbufLoader.get_pixbuf())
+        #self.imageboxThumbnail.set_from_file("/home/drew/Pictures/Screenshot from 2019-04-30 02-13-49.png")
 
     def save_thumbnail_callback(self, widget):
         print("Thumbnail saved.")
