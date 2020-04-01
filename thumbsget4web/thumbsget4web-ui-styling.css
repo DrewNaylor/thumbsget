@@ -1,6 +1,6 @@
 /* thumbsget4web - Gets the maxres or hq thumbnail for YouTube videos from
 original video URL. Not associated with YouTube or Google/Alphabet.
-Copyright (C) 2019 Drew Naylor
+Copyright (C) 2019-2020 Drew Naylor
 
 thumbsget4web is a port of thumbsget to a webpage.
 You can get the code for thumbsget and thumbsget4web from:
@@ -28,6 +28,22 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with thumbsget4web.  If not, see <http://www.gnu.org/licenses/>. */
 
+div[id="noscript"] {
+	display: flex;
+	flex-direction: column;
+	place-content: end;
+	font-family: Arial,sans-serif;
+	font-size: 13px;
+	width: 95vw;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	width: 95vw;
+}
+
 label {
 	font-family: Arial,sans-serif;
 	font-size: 13px;
@@ -39,10 +55,10 @@ input {
 }
 
 input[type="text"] {
-	/* Based on this SO anser:
+	/* Based on this SO answer:
 	https://stackoverflow.com/a/2125516 */
 	width: 432px;
-	max-width: 97%;
+	max-width: 94vw;
 }
 
 input[type="button"] {
@@ -67,14 +83,10 @@ img {
 	margin-top: 8px;
 	font-family: Arial,sans-serif;
 	font-size: 12.5px;
+	border: 1px solid gray;
 }
 
 a {
-	font-family: Arial,sans-serif;
-	font-size: 13px;
-}
-
-p {
 	font-family: Arial,sans-serif;
 	font-size: 13px;
 }

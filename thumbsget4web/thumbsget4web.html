@@ -7,7 +7,7 @@
   
      <!-- thumbsget4web - Gets the maxres or hq thumbnail for YouTube videos from
 original video URL. Not associated with YouTube or Google/Alphabet.
-Copyright (C) 2019 Drew Naylor
+Copyright (C) 2019-2020 Drew Naylor
 
 thumbsget4web is a port of thumbsget to a webpage.
 You can get the code for thumbsget and thumbsget4web from:
@@ -193,7 +193,9 @@ along with thumbsget4web.  If not, see <http://www.gnu.org/licenses/>. -->
 
     
     <!-- Actual thumbsget4web interface starts here: -->
+	<div>
    <form>
+   
     <label for="video_url">Video URL:</label>
 	<br>
 	<input type="text" id="video_url">
@@ -209,12 +211,16 @@ along with thumbsget4web.  If not, see <http://www.gnu.org/licenses/>. -->
     <br>
 
     <a href="javascript:showAboutMessage()">About thumbsget4web</a>
+	</div>
     
 
-    <noscript><p>JavaScript is required to use thumbsget4web. <br> If you don't want to enable JavaScript, 
-    you can <a href="https://github.com/DrewNaylor/thumbsget/" target="_blank">use the desktop version
-    of thumbsget</a> instead. <br>
+    <noscript><div id="noscript"><p>JavaScript is required to use thumbsget4web.
+	<br>
+	If you don't want to enable JavaScript, 
+    you can <a href="https://github.com/DrewNaylor/thumbsget/" target="_blank"> use the desktop version
+    of thumbsget</a> instead.
+	<br>
     There are versions of thumbsget for both Windows and macOS. thumbsget for Windows can also be run on Linux if .Net 4.6.1 is installed, which can be done through winetricks after installing Wine.</p>
-    </noscript>
+	</noscript>
 </body>
 </html>
