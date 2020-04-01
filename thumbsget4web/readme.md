@@ -18,6 +18,14 @@ Additionally, thumbsget4web will *not* work in Internet Explorer. This has been 
 
 ## Recent updates
 
+### Version 0.2.1.0 - March 31, 2020:
+
+- Added:
+  - 1-pixel gray border around thumbnail preview box
+- Changed:
+  - The UI is now mostly centered on the page rather than being aligned to the left. "Mostly," because I can't quite tell if it's perfectly aligned or not. Probably good enough, though.
+  - Copyright years updated from 2019 to 2019-2020.
+
 ### Version 0.2.0.0 - July 10, 2019:
 
 Quite a bit of the work in 0.2 was focused on making the UI look better, and in some cases, almost like the desktop version. The thumbnail preview is still below the buttons rather than on the side. This is both because I can't figure out how to make it look nice while moving it over to the right side, and also being an easier way for mobile users to interact with the UI in my opinion. Desktop users might not be bothered with horizontal space being taken up, while it's precious on mobile for anyone who doesn't rotate their device.
